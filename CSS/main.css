@@ -1,14 +1,15 @@
-body {
-    
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width:100%;
-    color: #ffffff;
-    overflow-x: hidden;
+* {
+  margin: 0 auto;
+  padding: 0;
 }
 
+body {
+    
+  max-width: 100%;
+  height: auto;
+  background-size:cover;
 
+}
 
 p {
     font-family: 'IBM Plex Sans', auto;
@@ -36,15 +37,15 @@ p a:hover {
 }
 
 img {
-       width: 100%;
-       height:auto;
+    width: 100%;
+    height:auto;
 }
 
 h1 {
-   font-size: 8vw;
-   font-family: 'IBM Plex Sans Condensed', sans-serif;
-   font-weight: 400;
-   text-transform: uppercase;
+    font-size: 8vw;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h2, h5 {
@@ -84,49 +85,41 @@ h6:hover {
 
 /* ############################ Header ############################ */
 
-/* Style the body */
-body {
-    font-family: Arial;
-    margin: 0;
-  }
   
   /* Header/Logo Title */
   .header {
-    background-image:url("https://arttustenius.com/wp-content/uploads/2024/01/headerimage1.jpg");
-    background-color: #000000;
+    display: block;
     position: relative;
-    display: block; /* the default for span */
-    text-align: left;
-    background-size:cover;
-    background-attachment:fixed;
     opacity:0.85;
-    width: 100%;
-    height: 650px;
+    max-width: 100%;
+    height: auto;
     color: white;
     font-size: 30px;
-    top: 0;
   }
 
-  .header h1{
-    padding-left: 50px;
-    padding-right: 600px;
-    padding-top:100px;
+  .header h1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
     text-shadow: 2px 2px 8px #000000;
-    animation-duration: 2s; /* don't forget to set a duration! */
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    --animate-duration: 1.5s;
+    
   }
 
-  .header p{
-    font-size: 16px;
-    padding-left: 50px;
-    padding-right: 600px;
-    text-shadow: 2px 2px 8px #000000;
+  .header p {
+    position: absolute;
+    top: 70%;
+    font-size: 1.8vw;
     text-transform: uppercase;
-    font-weight: 500;
-    animation-duration: 2s; /* don't forget to set a duration! */
-  }
-  
-  #ImageHeaderText {
-    padding-bottom: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    --animate-duration: 2.5s;
   }
 
   #videoScreen {
@@ -140,63 +133,32 @@ body {
     z-index:-1;
   }
 
-/* ############################ Navigation ############################ */
-
-nav, main {
+  .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
-
-.navbar {
-    background: blue;
-    text-transform: uppercase;
-    font-weight:500;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    opacity: 0.85;
-}
-.nav-item::after {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #2c359a;
-    transition: 0.6s 
-}
-.nav-item:hover::after {
-    width: 100% 
-}
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #fec400 
-}
-.nav-link {
-    padding: 15px 5px;
-    transition: 0.2s 
-}
-
-/* ############################ Screen sizes ############################ */
-
-/* 600px and smaller screen sizes */
-@media (max-width:600px){
-
-   /* Body */
-   body{
-       padding-left:0px;
-       padding-right:0px;
-       
-   }
-   
-   /* Header */
-    header{
-        background-attachment:fixed;
-        background-size:cover;
-        opacity:0.85;
-    
-   }
-   
-}
-
-/* 420px and smaller screen sizes */
-@media (max-width:420px){
-   
-   
-}
-
