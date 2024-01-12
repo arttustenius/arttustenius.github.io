@@ -135,17 +135,57 @@ h6:hover {
   }
 
   .navbar .navbar-brand {
+    display: block;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 20px;
+    text-align: center;
+    
   }
 
+  .navbar a{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    text-transform: uppercase;
+  }
 
   .section {
     width: 100%;
     height: 200vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     color: #ffffff;
 }
+
+/*UPBANNER*/
+
+.socialmedialinks a .fa-facebook-f{
+	color:#ffffff;
+	padding-right:15px;
+  top: 30%;
+}
+
+.upbanner .socialmedialinks .fa-linkedin{
+	color:#ffffff;
+	padding-right:15px;
+}
+
+.upbanner .socialmedialinks .fa-instagram{
+	color:#ffffff;
+	padding-right:15px;
+}
+
+.upbanner{
+    position: absolute;
+    right: 20%;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: right;
+    text-shadow: 2px 2px 8px #000000;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
+
+
 
