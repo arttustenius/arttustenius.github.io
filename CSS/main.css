@@ -160,7 +160,6 @@ h6:hover {
 .socialmedialinks a .fa-facebook-f{
 	color:#ffffff;
 	padding-right:15px;
-  top: 30%;
 }
 
 .upbanner .socialmedialinks .fa-linkedin{
@@ -175,8 +174,8 @@ h6:hover {
 
 .upbanner{
     position: absolute;
-    right: 20%;
-    font-size: 3vw;
+    right: 10%;
+    font-size: 5vw;
     text-transform: uppercase;
     text-align: right;
     text-shadow: 2px 2px 8px #000000;
