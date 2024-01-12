@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" data-bs-theme="dark">
 <head>
 
     <meta charset="UTF-8">
@@ -12,74 +12,90 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
 
+    <script>
+        
+    </script>
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500&family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
-        </style>
+
+    </style>
 
 </head>
 
-<body>
-    
-    <nav class="navbar bg-body-tertiary fixed-top">
-
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown</a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Etsi..</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
 
     <video autoplay muted loop id="videoScreen">
         <source src="https://arttustenius.com/wp-content/uploads/2024/01/163242-720p.mp4" type="video/mp4">
     </video>
 
     <div class="header">
-        <img src="IMG/headerimage1.jpg">
+
+        <img src="IMG/headerimage1.jpg" class="img-fluid" alt="headerimage">
            
             <h1 class="animate__animated animate__bounceInDown">Arttu Stenius portfolio</h1>
             <p class="animate__animated animate__bounceInLeft">Tieto-ja viestintätekniikan opiskelija (web-kehitys)</p>
           
         </div>
     </div>
+      
+    <!-- Scroll Spy Navigation -->
+    <nav id="navbar-example2" class="navbar sticky-top bg-dark px-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#minusta">Minä</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#osaaminen">Osaaminen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakti">Kontakti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#alakerta">Alakerta</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Scroll Spy Main Content -->
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        
+        <!-- Hero Section Start -->
+        <section id="minusta" class="section">
+            <h1>Minusta</h1>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- About Section Start -->
+        <section  id="historia" class="section">
+            <h1>Historia</h1>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Portfolio Section Start -->
+        <section id="osaaminen" class="section">
+            <h1>Osaaminen</h1>
+        </section>
+        <!-- Portfolio Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="kontakti" class="section">
+            <h1>Kontakti</h1>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- Footer Section Start -->
+        <section id="alakerta" class="section">
+            <h1>Alakerta</h1>
+        </section>
+        <!-- Footer Section End -->
+
+    </main>
 </body>
 </html>
