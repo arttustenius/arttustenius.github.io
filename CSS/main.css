@@ -12,14 +12,19 @@ body {
 }
 
 p {
-    font-family: 'IBM Plex Sans', auto;
+    font-family: 'IBM Plex Mono', monospace;
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 300;
 }
 
+.text-light {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:2vw;
+}
+
 a {
-    color:#ffffff;
+    color:#d8b70f;
     cursor:pointer;
     text-decoration:none;
     font-weight:400;
@@ -28,10 +33,10 @@ a {
 p a:hover {
    
    background: rgb(0,0,0,0);
-   color: #93D8FF;
+   color: #d8b70f;
    cursor:pointer;
    text-decoration:underline;
-   font-weight:300;
+   font-weight:400;
    font-size: 18px;
    
 }
@@ -134,17 +139,12 @@ h6:hover {
     z-index:-1;
   }
 
-  .navbar .navbar-brand {
-    display: block;
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    
-  }
 
   .navbar a{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     text-transform: uppercase;
+    color: #d8b70f;
+    
   }
 
   .section {
@@ -182,9 +182,19 @@ h6:hover {
     margin: auto;
     width: 100%;
     padding: 10px;
-    
-    
 }
 
+.animate__zoomInDown{
+  padding: 0px;
+  width: 50%;
+  color: #ffffff;
+}
 
+.bg-dark {
+  padding: 10px;
+}
 
+.container {
+  width: 100%;
+  height: auto;
+}
