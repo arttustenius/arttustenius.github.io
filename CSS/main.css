@@ -14,7 +14,7 @@ body {
 p {
     font-family: 'IBM Plex Mono', monospace;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size:2vw;
     font-weight: 300;
 }
 
@@ -31,19 +31,23 @@ a {
 }
 
 p a:hover {
-   
+  font-family: 'IBM Plex Mono', monospace;
    background: rgb(0,0,0,0);
    color: #d8b70f;
    cursor:pointer;
    text-decoration:underline;
    font-weight:400;
-   font-size: 18px;
+   font-size:2vw;
    
 }
 
 img {
     width: 100%;
     height:auto;
+}
+
+.display-3 {
+  padding-top: 20px;
 }
 
 h1 {
@@ -194,7 +198,7 @@ h6:hover {
   padding: 10px;
 }
 
-.container {
-  width: 100%;
+.col-md-6 {
+  width: 50%;
   height: auto;
 }
