@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+/* ############################ Body ############################ */
+
 body {
   position: relative; 
   max-width: 100%;
@@ -11,25 +13,34 @@ body {
 
 }
 
+/* ############################ Teksti ############################ */
+
 p {
     font-family: 'IBM Plex Mono', monospace;
     color: rgb(255, 255, 255);
     font-size:2vw;
     font-weight: 300;
+    text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 .text-light {
   font-family: 'IBM Plex Mono', monospace;
   font-size:2vw;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
-
-
 
 a {
     color:#d8b70f;
     cursor:pointer;
-    text-decoration:none;
     font-weight:400;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid #fff3;
+    
+}
+
+a:hover {
+  border-bottom-color: #fff9;
 }
 
 p a:hover {
@@ -43,6 +54,8 @@ p a:hover {
    
 }
 
+/* ############################ Images ############################ */
+
 img {
     width: 100%;
     height:auto;
@@ -52,28 +65,34 @@ img {
   padding-top: 20px;
 }
 
+/* ############################ h1, h2, h3, h4, h5, h6 ############################ */
+
 h1 {
     font-size: 8vw;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+    text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h2, h5 {
    font-family: 'IBM Plex Sans Condensed', sans-serif;
    text-transform: uppercase;
+   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h3 {
    font-family: 'IBM Plex Sans Condensed', sans-serif;
    text-transform: uppercase;
    font-size:3vw;
+   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h4 {
    font-size: 22px;
    font-family: 'IBM Plex Sans Condensed', sans-serif;
    text-transform: uppercase;
+   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h6 {
@@ -82,6 +101,7 @@ h6 {
    font-size:18px;
    padding-top: 20px;
    padding-bottom: 20px;
+   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
    
 }
 
@@ -91,13 +111,12 @@ h6:hover {
    background: rgb(0,0,0,0);
    color: #93D8FF;
    cursor:pointer;
+   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
    
 }
 
 /* ############################ Header ############################ */
 
-  
-  /* Header/Logo Title */
   .header {
     
     display: block;
@@ -134,6 +153,18 @@ h6:hover {
     --animate-duration: 4.5s;
   }
 
+  /* ############################ Section headers ############################ */
+
+.cvh1 h1 {
+  padding-top: 100px;
+}
+
+.minäh1 h1 {
+  padding-top: 100px;
+}
+
+  /* ############################ Videoscreen ############################ */
+
   #videoScreen {
     filter:blur(3px);
     position: fixed;
@@ -145,6 +176,7 @@ h6:hover {
     z-index:-1;
   }
 
+  /* ############################ Navbar ############################ */
 
   .navbar a{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -152,6 +184,13 @@ h6:hover {
     color: #d8b70f;
     
   }
+
+  .bg-dark {
+    opacity: 0.85;
+    padding: 10px;
+  }
+
+  /* ############################ Sections ############################ */
 
   .section {
     width: 100%;
@@ -161,7 +200,7 @@ h6:hover {
     color: #ffffff;
 }
 
-/*UPBANNER*/
+/* ############################ Upbanner ############################ */
 
 .socialmedialinks a .fa-facebook-f{
 	color:#ffffff;
@@ -190,15 +229,15 @@ h6:hover {
     padding: 10px;
 }
 
+/* ############################ CSS animate ############################ */
+
 .animate__zoomInDown{
   padding: 0px;
   width: 50%;
   color: #ffffff;
 }
 
-.bg-dark {
-  padding: 10px;
-}
+/* ############################ Columns ############################ */
 
 .col-md-6 {
   width: 50%;
@@ -208,8 +247,4 @@ h6:hover {
 
 .harrastukset {
   padding-top: 20px;
-}
-
-.cvh1 h1 {
-  padding-top: 150px;
 }
