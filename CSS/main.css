@@ -23,6 +23,10 @@ p {
   font-size:2vw;
 }
 
+.text-start h3{
+  font-size:2vw;
+}
+
 a {
     color:#d8b70f;
     cursor:pointer;
