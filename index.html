@@ -13,9 +13,17 @@
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
     <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
 
-    <script>
-        
-    </script>
+    <!-- GOOGLE FONTS & FONTAWESOME -->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script> 
+        $(document).ready(function () { 
+          $('body').scrollspy({ 
+            target: ".navbar", offset: 50
+          }); 
+        }); 
+      </script> 
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500&family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
@@ -26,7 +34,7 @@
 
 
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
+<body data-bs-spy="scroll" data-bs-target="navbar-example2" data-bs-offset="0">
 
     <video autoplay muted loop id="videoScreen">
         <source src="https://arttustenius.com/wp-content/uploads/2024/01/163242-720p.mp4" type="video/mp4">
@@ -82,7 +90,7 @@
 
             <!-- MINÄ KUVAUKSEN SISÄLLÖN ALKU -->
 
-            <div class="container">
+            <div class="minäcontainer">
                 <div class="row pt-2 pb-2 mt-5 mb-3">
                     <div class="col-md-6 border-right">
                         <div class="p-3 bg-info bg-opacity-10 border border-dark border-start-0 rounded-end">
@@ -129,34 +137,130 @@
 
                             </p>
                         </div>
-                        <div class="p-3 bg-info bg-opacity-10 border border-dark border-start-0 rounded-end">
-                            <h3 class="text-center">
-                                Harrastukset
-                            </h3>
 
-                            <div class="text-light list-group text-center list-group-item-dark">
-                                <button type="button" class="list-group-item list-group-item-action">Musiikki</button>
-                                <button type="button" class="list-group-item list-group-item-action">Elektroniikka</button>
-                                <button type="button" class="list-group-item list-group-item-action">Kuntosali</button>
-                                <button type="button" class="list-group-item list-group-item-action">Retkeily</button>
+                        <div class="harrastukset">
+                            <div class="bg-info bg-opacity-10 border border-dark border-start-0 rounded-end">
+                                <h3 class="text-center ">Harrastukset</h3>
+                                <div class="text-light list-group text-center list-group-item-dark">
+                                    <button type="button" class="list-group-item list-group-item-action">Musiikki</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Elektroniikka</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Kuntosali</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Retkeily</button>
+                                </div>
                             </div>
-
-                        </div>
-                            
+                        </div> 
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Hero Section End -->
+        <!-- MINÄ KUVAUKSEN SISÄLLÖN LOPPU -->
 
+        <!-- CV KUVAUKSEN SISÄLLÖN ALKU -->
 
+        <section id="CV" class="section">
+            
+            <div class="cvh1">
+                <div class="text-light text-center">
+                <h1>CV</h1>
+            </div>
 
-        <!-- About Section Start -->
-        <section  id="CV" class="section">
-            <h1>CV</h1>
+            <div class="cvcontainer">
+                <div class="row pt-2 pb-2 mt-5 mb-3">
+                    <div class="col-md-6 border-right">
+                        <div class="p-3 bg-info bg-opacity-10 border border-dark border-start-0 rounded-end">
+
+                            <h3 class="text-start">Kontakti</h3>
+
+                            <p class="text-light text-start">
+                                <i class="fa-solid fa-phone"></i> 044 351 92 65</p>
+                            
+                            <p class="text-light text-start">
+                            <i class="fa-regular fa-envelope"></i><a href="mailto:kontakti@arttustenius.com"> kontakti@arttustenius.com</a></p>
+
+                            <p class="text-light text-start">
+                            <i class="fa-solid fa-house"></i><a href="https://arttustenius.com/"> https://arttustenius.com/</a></p>
+
+                            <p class="text-light text-start">
+                            <i class="fa-solid fa-location-dot"></i>     Kerava, Savio</p>
+                            
+                            <h3 class="text-start">Työdemot/Verkkosivut</h3>
+
+                            <p class="fw-lighter text-start">
+                            <a href="https://arttustenius.com/">https://arttustenius.com/</a>
+                            <a href="https://bilebandijoyride.com/">https://bilebandijoyride.com/</a>
+                            <a href="https://spiderlegsproductions.com/">https://spiderlegsproductions.com/</a>
+
+                            <h3 class="text-start">Kielitaito</h3>
+
+                            <p class="fw-lighter text-start">
+                            Suomi - Äidinkieli<br>
+                            Englanti - Hyvä<br>
+                            Ruotsi - Alkeet<br>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-info bg-opacity-10 border border-dark border-start-0 rounded-end">
+                            <h3 class="text-start">Koulutus</h3>
+
+                            <p class="fw-bold text-start">
+                            Taitotalo, Helsinki</p>
+
+                            <p class="fw-lighter text-start">
+                            Tieto-ja viestintätekniikan perustutkinto / web-kehitys 10/2023 -</p>
+
+                            <p class="fw-bold text-start">
+                                Keski-Uudenmaan koulutuskuntaryhmä (Keuda)</p>
+    
+                            <p class="fw-lighter text-start">
+                                Rakennusalan perustutkinto / Talonrakentaja 11/2021 - 08/2023</p>
+
+                                <hr>
+
+                                <h3 class="text-start">Työkokemus</h3>
+
+                                <p class="fw-bold text-start">
+                                    Puukoti Group Oy</p>
+    
+                                <p class="fw-lighter text-start">
+                                    Tuotantotyöntekijä /
+                                    oppisopimus 11/2021–5/2023
+                                    <br><br>
+                                    Tehtävät: Palokatko- ja väliseinien rakentaminen,
+                                    sisäkattojen / sähkökaapeleiden asennusta ja muita
+                                    sekalaisia tehtaan tuotannon työtehtäviä.</p>
+
+                                
+
+                                <p class="fw-bold text-start">
+                                    Spiderlegs productions</p>
+    
+                                <p class="fw-lighter text-start">
+                                    Toiminimi, yrittäjä 05/2021 -<br><br>
+                                    Tehtävät: Toiminimi, yrittäjä, äänentoiston- ja esitystekniikan
+                                    vuokraus, IT-tukipalvelu, WordPress-sivujen kehitys ja ylläpito.
+                                </p>
+                                
+
+                                <p class="fw-bold text-start">
+                                    HKL-Raitioliikenne</p>
+    
+                                <p class="fw-lighter text-start">
+                                    Raitiovaununkuljettaja | 01/2013–11/2021<br><br>
+                                    Tehtävät: Raitiovaununkuljettajan työt sekä siihen liittyvä
+                                    asiakaspalvelu.
+
+                                </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        <!-- About Section End -->
+        <!--  CV KUVAUKSEN SISÄLLÖN LOPPU -->
 
         <!-- Portfolio Section Start -->
         <section id="osaaminen" class="section">

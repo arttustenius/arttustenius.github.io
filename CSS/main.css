@@ -201,4 +201,13 @@ h6:hover {
 .col-md-6 {
   width: 50%;
   height: auto;
+  
+}
+
+.harrastukset {
+  padding-top: 20px;
+}
+
+.cvh1 h1 {
+  padding-top: 150px;
 }
