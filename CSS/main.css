@@ -10,6 +10,7 @@ body {
   max-width: 100%;
   height: auto;
   background-size:cover;
+  background-color: #0D0D0D
 
 }
 
@@ -17,7 +18,7 @@ body {
 
 p {
     font-family: 'IBM Plex Mono', monospace;
-    color: rgb(255, 255, 255);
+    color: #F2BB77;
     font-size:2vw;
     font-weight: 300;
     text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
@@ -27,6 +28,7 @@ p {
   font-family: 'IBM Plex Mono', monospace;
   font-size:2vw;
   text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  color: #F2BB77;
 }
 
 a {
@@ -76,12 +78,14 @@ h1 {
 }
 
 h2, h5 {
+    color: #F2BB77;
    font-family: 'IBM Plex Sans Condensed', sans-serif;
    text-transform: uppercase;
    text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h3 {
+  color: white;
    font-family: 'IBM Plex Sans Condensed', sans-serif;
    text-transform: uppercase;
    font-size:3vw;
@@ -115,6 +119,46 @@ h6:hover {
    
 }
 
+/* ############################ Geeks ############################ */
+
+.geeks { 
+  display: block;
+  width: 32%; 
+  height: 2px; 
+  background: #F2BB77;
+  position: absolute; 
+  top: 18%; 
+  left: 10%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1;
+} 
+
+.geeks::before { 
+  display: block;
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: #A63117;
+  animation: animate 7s linear infinite; 
+} 
+
+@keyframes animate { 
+  0% { 
+      left: 0; 
+  } 
+
+  50% { 
+      left: 100%; 
+  } 
+
+  0% { 
+      left: 0; 
+  } 
+} 
+
 /* ############################ Header ############################ */
 
   .header {
@@ -130,8 +174,8 @@ h6:hover {
 
   .header h1 {
     position: absolute;
-    text-align: center;
-    top: 50%;
+    text-align: left;
+    top: 0%;
     text-shadow: 2px 2px 8px #000000;
     margin: auto;
     width: 100%;
@@ -142,14 +186,15 @@ h6:hover {
 
   .header p {
     position: absolute;
-    top: 70%;
+    top: 15%;
+    left: 37%;
     font-size: 3vw;
     text-transform: uppercase;
-    text-align: center;
-    text-shadow: 2px 2px 8px #000000;
+    text-align: left;
+    display: block;
     margin: auto;
-    width: 100%;
-    padding: 10px;
+    
+    padding: 20px;
     --animate-duration: 4.5s;
   }
 
@@ -160,18 +205,18 @@ h6:hover {
 }
 
 .minäh1 h1 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
   /* ############################ Videoscreen ############################ */
 
-  #videoScreen {
-    filter:blur(3px);
+  *#videoScreen {
+    filter:blur(5px);
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100vh;
     object-fit: fill;
     z-index:-1;
   }
@@ -219,7 +264,7 @@ h6:hover {
 
 .upbanner{
     position: absolute;
-    right: 10%;
+    right: 00%;
     font-size: 5vw;
     text-transform: uppercase;
     text-align: right;
@@ -227,15 +272,12 @@ h6:hover {
     margin: auto;
     width: 100%;
     padding: 10px;
+    z-index: 3;
 }
 
 /* ############################ CSS animate ############################ */
 
-.animate__zoomInDown{
-  padding: 0px;
-  width: 50%;
-  color: #ffffff;
-}
+
 
 /* ############################ Columns ############################ */
 
