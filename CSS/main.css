@@ -226,7 +226,8 @@ h6:hover {
   .navbar a{
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     text-transform: uppercase;
-    color: #d8b70f;
+    color: #F2BB77;
+    font-size: 2vw;
     
   }
 
