@@ -23,6 +23,8 @@
             target: ".navbar", offset: 50
           }); 
         }); 
+
+        
       </script> 
     <style>
 
@@ -42,6 +44,11 @@
 
     <div class="header">
         <div class="upbanner">
+            <div class="geeks"></div>
+            
+            <h1 class="animate__animated animate__bounceInDown"><a href="https://arttustenius.github.io/">Arttu Stenius</h1></a>
+            <p class="animate__animated animate__bounceInLeft">portfolio</p>
+
             <div class="socialmedialinks">
                     <a class="hover-target" href="https://www.linkedin.com/in/arttu-stenius/"><i class="fa-brands fa-linkedin fa-xs"></a></i>
                     <a class="hover-target" href="https://www.facebook.com/ittukikerava/"><i class="fab fa-facebook-f fa-xs"></a></i>
@@ -50,10 +57,6 @@
         </div>
 
         <img src="IMG/headerimage2.jpg" class="img-fluid" alt="headerimage">
-           
-        <h1 class="animate__animated animate__bounceInDown">Arttu Stenius</h1>
-        <div class="geeks"></div>
-        <p class="animate__animated animate__bounceInLeft">portfolio</p>
           
     </div>
       
@@ -73,9 +76,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#kontakti">Kontakti</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#alakerta">Alakerta</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -88,7 +88,7 @@
 
         <section id="minä" class="minä">
 
-            <div class="minäh1">
+            <div class="minusta-h1">
                 <div class="text-light text-center">
                 <h1>Minusta</h1>
             </div>
@@ -165,12 +165,12 @@
 
         <section id="CV" class="section">
             
-            <div class="cvh1">
+            <div class="cv-h1">
                 <div class="text-light text-center">
                 <h1>CV</h1>
             </div>
 
-            <div class="cvcontainer">
+            <div class="cv-container">
                 <div class="row pt-2 pb-2 mt-5 mb-3">
                     <div class="col-md-6 border-right">
                         <div class="bg-dark bg-opacity-75">
@@ -263,26 +263,108 @@
                 </div>
             </div>
         </section>
+
         <!--  CV KUVAUKSEN SISÄLLÖN LOPPU -->
 
-        <!-- Portfolio Section Start -->
-        <section id="osaaminen" class="section">
-            <h1>Osaaminen</h1>
-        </section>
-        <!-- Portfolio Section End -->
+        <!--  OSAAMISEN KUVAUKSEN SISÄLLÖN ALKU -->
 
-        <!-- Contact Section Start -->
-        <section id="kontakti" class="section">
-            <h1>Kontakti</h1>
+       <section id="osaaminen" class="section">
+            
+            <div class="osaaminen-h1">
+                <div class="text-light text-center">
+                <h1>Osaaminen</h1>
+            </div>
+
+            <div class="osaaminen-container">
+                <div class="row pt-2 pb-2 mt-5 mb-3">
+                    <div class="col-md-6 border-right">
+                        <div class="bg-dark bg-opacity-75">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-dark bg-opacity-75">
+                            <h3 class="text-start"></h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- Contact Section End -->
+
+        <!--  OSAAMISEN KUVAUKSEN SISÄLLÖN LOPPU -->
+
+        <section id="kontakti" class="section">
+            
+            <div class="kontakti-h1">
+                <div class="text-light text-center">
+                <h1>Kontakti</h1>
+            </div>
+
+            <div class="kontakti-container">
+                <div class="row pt-2 pb-2 mt-5 mb-3">
+                    <div class="col-md-6 border-right">
+                        <div class="bg-dark bg-opacity-75">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-dark bg-opacity-75">
+                            <h3 class="text-start"></h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer Section Start -->
-        <section id="alakerta" class="section">
-            <h1>Alakerta</h1>
-        </section>
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+<div class="container my-5">
+
+    <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ittukikerava/" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/mrmoonstoner666/" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/arttu-stenius/" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://arttustenius.github.io" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-light" href="https://arttustenius.com/">Arttu Stenius</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    
+  </div>
+  <!-- End of .container -->
         <!-- Footer Section End -->
 
-    </main>
+</main>
 </body>
 </html>
