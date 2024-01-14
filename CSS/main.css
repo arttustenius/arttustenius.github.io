@@ -123,14 +123,15 @@ h6:hover {
 
 .geeks { 
   display: block;
-  width: 32%; 
+  width: 50%; 
   height: 2px; 
   background: #F2BB77;
   position: absolute; 
-  top: 18%; 
-  left: 10%; 
+  top: 0%; 
+  left: 0%; 
   transform: translate(-50%, -50%); 
   z-index: 1;
+  margin-top: 15px;
 } 
 
 .geeks::before { 
@@ -177,7 +178,7 @@ h6:hover {
     text-align: left;
     top: 0%;
     text-shadow: 2px 2px 8px #000000;
-    margin: auto;
+    margin: 15px;
     width: 100%;
     padding: 10px;
     --animate-duration: 3.5s;
@@ -186,15 +187,15 @@ h6:hover {
 
   .header p {
     position: absolute;
-    top: 13%;
-    left: 37%;
+    width: 100%;
+    top: 18%;
+    right: 20px;
     font-size: 3vw;
     text-transform: uppercase;
-    text-align: left;
+    text-align: right;
     display: block;
-    margin: auto;
     
-    padding: 20px;
+   
     --animate-duration: 4.5s;
   }
 
