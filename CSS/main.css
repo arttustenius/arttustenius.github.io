@@ -16,7 +16,6 @@ height: auto;
 /* ############################ Teksti ############################ */
 
 p {
-
 font-family: 'IBM Plex Mono', monospace;
 color: #F2BB77;
 font-size:2vw;
@@ -158,6 +157,7 @@ animation: animate 7s linear infinite;
 0% { 
   left: 0; 
 } 
+
 } 
 
 /* ############################ Header ############################ */
@@ -199,6 +199,8 @@ text-transform: uppercase;
 padding-top: 50px;
 }
 
+
+
 /* ############################ Videoscreen ############################ */
 
 *#videoScreen {
@@ -231,7 +233,7 @@ padding: 10px;
 
 .section {
 width: 100%;
-height: auto;
+height: 200vh;
 display: flex;
 justify-content: center;
 color: #ffffff;
