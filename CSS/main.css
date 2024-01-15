@@ -16,6 +16,7 @@ height: auto;
 /* ############################ Teksti ############################ */
 
 p {
+
 font-family: 'IBM Plex Mono', monospace;
 color: #F2BB77;
 font-size:2vw;
@@ -198,8 +199,6 @@ text-transform: uppercase;
 padding-top: 50px;
 }
 
-
-
 /* ############################ Videoscreen ############################ */
 
 *#videoScreen {
@@ -232,7 +231,7 @@ padding: 10px;
 
 .section {
 width: 100%;
-height: 200vh;
+height: auto;
 display: flex;
 justify-content: center;
 color: #ffffff;
@@ -286,3 +285,34 @@ height: auto;
 .harrastukset {
 padding-top: 20px;
 }
+
+/* ############################ Breakpoints ############################ */
+
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 320px) {...}
+
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {...}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
