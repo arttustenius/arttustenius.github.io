@@ -58,22 +58,28 @@ font-size:2vw;
 /* ############################ Images ############################ */
 
 img {
+
 width: 100%;
 height:auto;
+
 }
 
 .display-3 {
+
 padding-top: 20px;
+
 }
 
 /* ############################ h1, h2, h3, h4, h5, h6 ############################ */
 
 h1 {
+
 font-size: 8vw;
 font-family: 'IBM Plex Sans Condensed', sans-serif;
 font-weight: 400;
 text-transform: uppercase;
 text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+
 }
 
 h2, h5 {
@@ -120,45 +126,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 
 /* ############################ Geeks ############################ */
 
-.geeks { 
-display: block;
-width: 50%; 
-height: 2px; 
-background: #F2BB77;
-position: absolute; 
-top: 0%; 
-left: 0%; 
-transform: translate(-50%, -50%); 
-z-index: 1;
-margin-top: 15px;
-} 
 
-.geeks::before { 
-display: block;
-content: ""; 
-position: absolute; 
-top: 0; 
-left: 0; 
-width: 100%; 
-height: 100%; 
-background: #A63117;
-animation: animate 7s linear infinite; 
-} 
-
-@keyframes animate { 
-0% { 
-  left: 0; 
-} 
-
-50% { 
-  left: 100%; 
-} 
-
-0% { 
-  left: 0; 
-} 
-
-} 
 
 /* ############################ Header ############################ */
 
@@ -180,6 +148,7 @@ top: 0%;
 text-shadow: 2px 2px 8px #000000;
 margin: 15px;
 width: 60%;
+padding-left: 10px;
 --animate-duration: 3.5s;
 
 }
@@ -233,7 +202,7 @@ padding: 10px;
 
 .section {
 width: 100%;
-height: 200vh;
+height: auto;
 display: flex;
 justify-content: center;
 color: #ffffff;
@@ -301,6 +270,17 @@ body {
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {...}
 
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
  
@@ -313,8 +293,26 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {...}
 
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {...}
 
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
