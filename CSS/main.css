@@ -31,6 +31,7 @@ color: #F2BB77;
 }
 
 a {
+font-size: 2vw;
 color:#d8b70f;
 cursor:pointer;
 font-weight:400;
@@ -132,34 +133,47 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 
 .header {
 
-display: inline-block;
-position: relative;
-opacity:0.85;
-width: 100%;
-height: auto;
-color: white;
-font-size: 30px;
+  display: inline-block;
+  position: relative;
+  opacity:0.85;
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 30px;
+}
+
+.upbanner{
+  display: block;
+  position: absolute;
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: right;
+  width: 100%;
+  right: 2%
+
 }
 
 .upbanner h1 {
-position: absolute;
-text-align: left;
-top: 0%;
-text-shadow: 2px 2px 8px #000000;
-margin: 15px;
-width: 60%;
-padding-left: 10px;
---animate-duration: 3.5s;
+  position: absolute;
+  text-align: left;
+  top: 0%;
+  text-shadow: 2px 2px 8px #000000;
+  width: 60%;
+  font-size: 5vw;
+  margin-left: 40px;
+  --animate-duration: 3.5s;
 
 }
 
 .upbanner p {
-position: absolute;
-top: 100%;
-right: 8px;
-font-size: 3vw;
-text-transform: uppercase;
---animate-duration: 4.5s;
+  position: absolute;
+  text-align: left;
+  top: 45%;
+  text-shadow: 2px 2px 8px #000000;
+  width: 60%;
+  font-size: 5vw;
+  margin-left: 40px;
+  --animate-duration: 4.5s;
 }
 
 /* ############################ Section headers ############################ */
@@ -212,33 +226,28 @@ color: #ffffff;
 
 .socialmedialinks .fa-facebook-f{
 
-padding-right:15px;
+  font-size: 3vw;
+  padding-right:15px;
 }
 
 .upbanner .socialmedialinks .fa-linkedin{
 
-padding-right:15px;
+  font-size: 3vw;
+  padding-right:15px;
 }
 
 .upbanner .socialmedialinks .fa-instagram{
 
-padding-right:15px;
+  font-size: 3vw;
+  padding-right:15px;
 }
 
 .socialmedialinks {
-color:#ffffff;
-z-index: 5;
+  
+ 
+  color:#ffffff;
+  z-index: 5;
 
-
-}
-
-.upbanner{
-position: absolute;
-font-size: 5vw;
-text-transform: uppercase;
-text-align: right;
-width: 100%;
-right: 2%
 
 }
 
@@ -262,43 +271,34 @@ right: 2%
   object-fit: contain; /* or 'contain' if you want stretch instead of crop */
 }
 
-
-
-
 /* ############################ Columns ############################ */
 
 .col-md-6 {
-width: 50%;
-height: auto;
+  width: 50%;
+  height: auto;
 
 }
 
 .harrastukset {
-padding-top: 20px;
+  padding-top: 20px;
 }
 
 /* ############################ Breakpoints ############################ */
 
 /* Extra small devices (phones, 320px and down) */
-@media only screen and (max-width: 320px) {...}
+@media only screen and (max-width: 320px) {
 
-body {
-  padding-left: 10px;
-  padding-right: 10px;
+  body {
+ 
+  }
 }
 
 /* Extra small devices (phones, 400px and down) */
-@media only screen and (max-width: 400px) {...}
+@media only screen and (max-width: 400px) {
 
-body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-body {
-  padding-left: 20px;
-  padding-right: 20px;
+  body {
+   
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -311,28 +311,31 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-left: 50px;
+  padding-right: 50px;
+  
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-left: 70px;
+  padding-right: 70px;
+  
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
 
 body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  padding-left: 100px;
+  padding-right: 100px;
+  
+  }
 }
