@@ -19,11 +19,12 @@
 
     <script> 
         $(document).ready(function () { 
-          $('body').scrollspy({ 
+            $('body').scrollspy({ 
             target: ".navbar", offset: 50
-          }); 
+            }); 
         }); 
 
+        
     </script> 
     <style>
 
@@ -361,25 +362,62 @@
 
         <section id="kontakti" class="section">
             
-            <div class="kontakti-h1">
-                <div class="text-light text-center">
-                <h1>Kontakti</h1>
+            <div class="bg-dark customForm">
+                <h1 class="text-center">Kontakti</h1>
+                <form class="needs-validation">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="lastname" class="form-label">Sukunimi :</label>
+                            <input type="text" class="form-control" id="lastname">
+                            <div class="valid-feedback">
+                                Hyvältä näyttää!
+                            </div>
+                            <div class="invalid-feedback">
+                                2-15 merkkiä sallittu.
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="firstname" class="form-label">Etunimi :</label>
+                            <input type="text" class="form-control" id="firstname">
+                            <div class="valid-feedback">
+                                Oikein hyvä!
+                            </div>
+                            <div class="invalid-feedback">
+                                2-15 merkkiä sallittu.
+                            </div>
+                        </div>
+                        <div>
+                            <label class="form-label" for="email">Sähköposti :</label>
+                            <input type="email" class="form-control" id="email">
+                            <div class="valid-feedback">
+                                Hyvältä näyttää!
+                            </div>
+                            <div class="invalid-feedback">
+                                Anna kunnollinen sähköpostiosoite!
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="form-label">Viestisi :</label>
+                            <textarea type="text" class="form-control" id="message" rows="5"></textarea>
+                            <div class="valid-feedback">
+                                Mainiota!
+                            </div>
+                            <div class="invalid-feedback">
+                                Anna ainakin 10 kirjainta.
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid col-sm-6 mx-auto">
+                            <button type="submit" class="btn btn-primary">Lähetä</button>
+                        </div>
+                    </div>
+                </form>
             </div>
+        
 
-            <div class="kontakti-container">
-                <div class="row pt-2 pb-2 mt-5 mb-3">
-                    <div class="col-md-6">
-                        <div class="bg-dark text-dark bg-opacity-75 border border-success-subtle">
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bg-dark text-dark bg-opacity-75 border border-success-subtle">
-                            <h3 class="text-start"></h3>
 
-                        </div>
-                    </div>
-                </div>
+                </form>
+
             </div>
         </section>
 
@@ -436,5 +474,18 @@
         <!-- Footer Section End -->
 
     </main>
+
+    <script src="./app.js"></script>
+
+    <!-- Emailjs-->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("XQMrkTGxtesOUrCdz");
+    })();
+    </script>
 </body>
 </html>
