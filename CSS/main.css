@@ -178,10 +178,14 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 
 /* ############################ Section headers ############################ */
 
-.minusta-h1, .cv-h1, .osaaminen-h1, .kontakti-h1 {
+.minusta-h1, .cv-h1, .osaaminen-h1 {
 
   padding-top: 50px;
 
+}
+
+.kontakti-h1 {
+  height: 700px;
 }
 
 /* ############################ Videoscreen ############################ */
