@@ -125,11 +125,52 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 
 }
 
-/* ############################ Geeks ############################ */
+/* ############################ PROFILE IMAGE ############################ */
+.
+profile-image {
 
+  animation: profile-image 2s linear 0s 1 normal forwards;
 
+}
+@keyframes profile-image {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
 
 /* ############################ Header ############################ */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 
 .header {
 
@@ -174,22 +215,10 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
   font-size: 5vw;
   margin-left: 40px;
   --animate-duration: 4.5s;
-}
-
-/* ############################ Section headers ############################ */
-
-.minusta-h1, .cv-h1, .osaaminen-h1 {
-  height: auto;
-  padding-top: 50px;
 
 }
 
-.kontakti-h1 {
-  height: auto;
-  padding-bottom: %;
-}
-
-/* ############################ Videoscreen ############################ */
+/* ############################ VIDEOSCREEN ############################ */
 
 *#videoScreen {
 filter:blur(5px);
@@ -202,7 +231,7 @@ object-fit: fill;
 z-index:-1;
 }
 
-/* ############################ Navbar ############################ */
+/* ############################ NAVBAR ############################ */
 
 .navbar a{
 
@@ -211,16 +240,66 @@ text-transform: uppercase;
 color: #F2BB77;
 font-size: 2vw;
 
-
 }
 
-.bg-dark {
-opacity: 0.85;
-padding: 10px;
-border-radius: 1%;
+.nav {
+  transition: all .35s ease;
 }
 
-/* ############################ Sections ############################ */
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
+/* ############################ SECTIONS ############################ */
 
 .section {
 width: 100%;
@@ -229,7 +308,18 @@ display: flex;
 color: #ffffff;
 }
 
-/* ############################ Upbanner ############################ */
+.minusta-h1, .cv-h1, .osaaminen-h1 {
+  height: auto;
+  padding-top: 50px;
+
+}
+
+.kontakti-h1 {
+  height: auto;
+  padding-bottom: %;
+}
+
+/* ############################ SOCIAL MEDIA LINKS ############################ */
 
 .socialmedialinks .fa-facebook-f{
 
@@ -250,15 +340,13 @@ color: #ffffff;
 }
 
 .socialmedialinks {
-  
- 
+
   color:#ffffff;
   z-index: 5;
 
-
 }
 
-/* ############################ Scroll up ############################ */
+/* ############################ LANGUAGES ICON CSS ############################ */
 
 .carousel-inner {
   height: 0;
@@ -277,6 +365,8 @@ color: #ffffff;
   height: 100%; /* Bootstrap handles width already */
   object-fit: contain; /* or 'contain' if you want stretch instead of crop */
 }
+
+/* ############################ Scroll up ############################ */
 
 #myBtn {
   display: block;
