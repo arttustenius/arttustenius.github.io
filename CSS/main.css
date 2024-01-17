@@ -178,11 +178,11 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 
 /* ############################ Section headers ############################ */
 
-.osaaminen-h1, .cv-h1, .kontakti-h1, .minusta-h1 {
-padding-top: 50px;
+.minusta-h1, .cv-h1, .osaaminen-h1, .kontakti-h1 {
+
+  padding-top: 50px;
+
 }
-
-
 
 /* ############################ Videoscreen ############################ */
 
@@ -200,16 +200,19 @@ z-index:-1;
 /* ############################ Navbar ############################ */
 
 .navbar a{
+
 font-family: 'IBM Plex Sans Condensed', sans-serif;
 text-transform: uppercase;
 color: #F2BB77;
 font-size: 2vw;
+
 
 }
 
 .bg-dark {
 opacity: 0.85;
 padding: 10px;
+border-radius: 1%;
 }
 
 /* ############################ Sections ############################ */
@@ -271,6 +274,26 @@ color: #ffffff;
   object-fit: contain; /* or 'contain' if you want stretch instead of crop */
 }
 
+#myBtn {
+  display: block;
+  width: 10%;
+  height: 10%;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 0%;
+  z-index: 99;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+ 
+  opacity: 0.45;
+}
+
+#myBtn:hover {
+  background-color: transparent;
+}
+
 /* ############################ Columns ############################ */
 
 .col-md-6 {
@@ -284,11 +307,12 @@ color: #ffffff;
 }
 
 .customForm{
+  margin-top: 5%;
   width: 90%;
   max-width: 600px;
   border-radius: 10px;
   padding: 15px;
-  margin: 0 auto;
+  margin-bottom: 200px;
 }
 
 /* ############################ Breakpoints ############################ */

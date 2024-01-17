@@ -35,6 +35,8 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="navbar-example2" data-bs-offset="0">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./IMG/scrollup.png"></button>
+
 
 
     <video autoplay muted loop id="videoScreen">
@@ -171,12 +173,12 @@
                 <h1>CV</h1>
             </div>
 
-            <div class="cv-container">
+            <div class="kontakti-container">
                 <div class="row pt-2 pb-2 mt-5 mb-3">
                     <div class="col-md-6 border-right">
-                        <div class="bg-dark text-dark bg-opacity-75 border border-success-subtle">
+                        <div class="bg-dark text-light bg-opacity-75 border border-success-subtle">
 
-                            <h3 class="text-start">Kontakti</h3>
+                            
 
                             <p class="text-light text-start">
                                 <i class="fa-solid fa-phone"></i> 044 351 92 65</p>
@@ -279,7 +281,7 @@
             <div class="osaaminen-container">
                 <div class="row pt-2 pb-2 mt-5 mb-3 bg-opacity-25">
                     <div class="col-md-6 text-light">
-                        <div class="bg-dark text-dark bg-opacity-75">
+                        <div class="bg-dark text-light bg-opacity-75 border border-success-subtle">
 
                             <p>Tervetuloa tutustumaan osaamiseeni. Tässä osiossa kerron miten minun "urani" ohjelmoijana lähti oikein liikkeelle ja mihin oikein olen päätynyt.<br><br>
 
@@ -296,7 +298,7 @@
                             
                         </div>
                     </div>
-                    <div class="col-md-6 text-light">
+                    <div class="col-md-6 bg-dark text-light bg-opacity-75 border border-success-subtle">
                         
                         <div id="carouselExampleAutoplaying" class="bg-light p-3 bg-opacity-25 carousel slide" data-bs-ride="carousel">
                                 
@@ -341,7 +343,7 @@
                               
                         </div>
                     
-                        <div class="bg-dark text-dark bg-opacity-75">
+                        <div class="text-light bg-opacity-75">
                             <h3 class="text-start">Nykyhetki</h3>
                             
                             <p>Tällä hetkellä ylläpidän kolmea tekemääni WordPress-sivua, joissa on omat teemat ja taustalla pyörii bootstrap-ohjelmistokehys. Päivitän ja sovellan oppimiani asioita näihin sivuihin aktiivisesti.<br><br>
@@ -361,63 +363,72 @@
         <!--  OSAAMISEN KUVAUKSEN SISÄLLÖN LOPPU -->
 
         <section id="kontakti" class="section">
+           <div class="text-light bg-dark bg-opacity-75 bg-opacity-75 bg-opacity-75 border border-success-subtle">
+                <div class="kontakti-h1">
+                        <h1>Kontakti</h1>
+                    
+                        <p>Olen aktiivisesti etsimässä harjoittelupaikkaa tai oppisopimusmahdollisuutta toukokuussa alkavaan jaksoon.<br><br>
+
+                            Koulutukseni, intohimoni ja harrastuneisuuteni ohjelmointia kohtaan antavat minulle hyvän perustan, jota olen valmis soveltamaan oppimaani käytännössä.<br><br>
+                            
+                            Olen erityisen kiinnostunut kehittämään taitojani ohjelmistokehityksen, web-sovellusten suunnittelun ja datan käsittelyn parissa.<br><br>
+                            
+                            Jos olette avoimia tarjoamaan oppimismahdollisuuksia ja haluatte osaavan ja motivoituneen opiskelijan tiimiinne, otathan yhteyttä. Voitte tavoittaa minut alla olevan yhteydenottolomakkeen kautta.<br><br>
+                            </p>
             
-            <div class="bg-dark customForm">
-                <h1 class="text-center">Kontakti</h1>
-                <form class="needs-validation">
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <label for="lastname" class="form-label">Sukunimi :</label>
-                            <input type="text" class="form-control" id="lastname">
-                            <div class="valid-feedback">
-                                Hyvältä näyttää!
-                            </div>
-                            <div class="invalid-feedback">
-                                2-15 merkkiä sallittu.
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="firstname" class="form-label">Etunimi :</label>
-                            <input type="text" class="form-control" id="firstname">
-                            <div class="valid-feedback">
-                                Oikein hyvä!
-                            </div>
-                            <div class="invalid-feedback">
-                                2-15 merkkiä sallittu.
-                            </div>
-                        </div>
-                        <div>
-                            <label class="form-label" for="email">Sähköposti :</label>
-                            <input type="email" class="form-control" id="email">
-                            <div class="valid-feedback">
-                                Hyvältä näyttää!
-                            </div>
-                            <div class="invalid-feedback">
-                                Anna kunnollinen sähköpostiosoite!
-                            </div>
-                        </div>
-                        <div>
-                            <label for="message" class="form-label">Viestisi :</label>
-                            <textarea type="text" class="form-control" id="message" rows="5"></textarea>
-                            <div class="valid-feedback">
-                                Mainiota!
-                            </div>
-                            <div class="invalid-feedback">
-                                Anna ainakin 10 kirjainta.
-                            </div>
-                        </div>
-                        
-                        <div class="d-grid col-sm-6 mx-auto">
-                            <button type="submit" class="btn btn-primary">Lähetä</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        
 
-
-                </form>
-
+           
+                <div class="bg-dark bg-opacity-75 customForm">
+                    <h4 class="text-center">Yhteydenottolomake</h4>
+                    <form class="needs-validation">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="lastname" class="form-label">Sukunimi :</label>
+                                <input type="text" class="form-control" id="lastname">
+                                <div class="valid-feedback">
+                                    Hyvältä näyttää!
+                                </div>
+                                <div class="invalid-feedback">
+                                    2-15 merkkiä sallittu.
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="firstname" class="form-label">Etunimi :</label>
+                                <input type="text" class="form-control" id="firstname">
+                                <div class="valid-feedback">
+                                    Oikein hyvä!
+                                </div>
+                                <div class="invalid-feedback">
+                                    2-15 merkkiä sallittu.
+                                </div>
+                            </div>
+                            <div>
+                                <label class="form-label" for="email">Sähköposti :</label>
+                                <input type="email" class="form-control" id="email">
+                                <div class="valid-feedback">
+                                    Mahtavaa!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Anna kunnollinen sähköpostiosoite!
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="form-label">Viestisi :</label>
+                                <textarea type="text" class="form-control" id="message" rows="5"></textarea>
+                                <div class="valid-feedback">
+                                    Kiitos!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Anna ainakin 10 kirjainta.
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid col-sm-6 mx-auto">
+                                <button type="submit" class="btn btn-success">Lähetä</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -425,57 +436,77 @@
 
         <!-- Remove the container if you want to extend the Footer to full width. -->
 
-        <div class="container my-5">
+       
 
-            <footer class="bg-dark text-center text-white">
+        <footer class="bg-dark text-light text-center border border-success-subtle">
 
-                <!-- Grid container -->
+            <!-- Grid container -->
 
-                <div class="container p-4 pb-0">
+            <div class="container p-4 pb-0">
 
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
 
-                        <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ittukikerava/" role="button"
-                        ><i class="fab fa-facebook-f"></i
-                        ></a>
-                
-                        <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/mrmoonstoner666/" role="button"
-                        ><i class="fab fa-instagram"></i
-                        ></a>
-                
-                        <!-- Linkedin -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/arttu-stenius/" role="button"
-                        ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                
-                        <!-- Github -->
-                        <a class="btn btn-outline-light btn-floating m-1" href="https://arttustenius.github.io" role="button"
-                        ><i class="fab fa-github"></i
-                        ></a>
-
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                    <!-- Grid container -->
-        
-                    <!-- Copyright -->
-                    <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                        © 2024 Copyright:
-                        <a class="text-light" href="https://arttustenius.com/">Arttu Stenius</a>
-                    </div>
-                     <!-- Copyright -->
-            </footer>
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/ittukikerava/" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
             
-        </div>
-        <!-- End of .container -->
-        <!-- Footer Section End -->
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/mrmoonstoner666/" role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+            
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/arttu-stenius/" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+            
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://arttustenius.github.io" role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+                <!-- Grid container -->
+    
+                <!-- Copyright -->
+                <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Copyright:
+                    <a class="text-light" href="https://arttustenius.com/">Arttu Stenius</a>
+                </div>
+                    <!-- Copyright -->
+        </footer>
+            
+        
 
     </main>
 
     <script src="./app.js"></script>
+
+    <script>
+    // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+</script>
 
     <!-- Emailjs-->
 
