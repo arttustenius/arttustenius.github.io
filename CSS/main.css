@@ -126,23 +126,8 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 /* ############################ PROFILE IMAGE ############################ */
-.
-profile-image {
 
-  animation: profile-image 2s linear 0s 1 normal forwards;
 
-}
-@keyframes profile-image {
-	0% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
-}
 
 /* ############################ Header ############################ */
 
@@ -216,6 +201,20 @@ profile-image {
   margin-left: 40px;
   --animate-duration: 4.5s;
 
+}
+
+.kuvaus-div {
+  position: absolute;
+  display: block;
+  margin-top: 40%;
+  width: 100%;
+  
+}
+
+.kuvaus-div h3{
+  text-align: center;
+  font-size: 5vw;
+  text-shadow: 2px 2px 8px #000000;
 }
 
 /* ############################ VIDEOSCREEN ############################ */
@@ -422,8 +421,7 @@ color: #ffffff;
 @media only screen and (max-width: 600px) {
  
 body {
-    padding-left: 20px;
-    padding-right: 20px;
+   
   }
 }
 
@@ -451,8 +449,8 @@ body {
 @media only screen and (min-width: 1200px) {
 
 body {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
   
   }
 }
