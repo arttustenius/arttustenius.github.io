@@ -4,12 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
     <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
 
@@ -34,36 +40,56 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="navbar-example2" data-bs-offset="0">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./IMG/scrollup.png"></button>
+
+    <div class="top">
+        <div class="loading-box">
+            <div class="loading">Loading</div>
+            <div class="counter">100</div>%
+        </div>
+    </div>
+
 
     <video autoplay muted loop id="videoScreen">
         <source src="https://arttustenius.com/wp-content/uploads/2024/01/header_video3.mp4">
     </video>
 
     <div class="header">
-        <div class="upbanner">
-            <div class="geeks"></div>
-            
-            <h1 class="scale-up-center">Arttu Stenius</h1></a>
-            <p class="animate__animated animate__bounceInLeft">portfolio</p>
 
-            <div class="socialmedialinks">
-                    <a class="hover-target" href="https://www.linkedin.com/in/arttu-stenius/"><i class="fa-brands fa-linkedin fa-xs"></a></i>
-                    <a class="hover-target" href="https://www.facebook.com/ittukikerava/"><i class="fab fa-facebook-f fa-xs"></a></i>
-                    <a class="hover-target" href="https://www.instagram.com/mrmoonstoner666/"><i class="fab fa-instagram fa-xs"></a></i>
+        <div class="socialmedialinks">
+
+            <a class="hover-target" href="https://www.linkedin.com/in/arttu-stenius/"><i class="fa-brands fa-linkedin fa-2x"></a></i>
+        
+            <a class="hover-target" href="https://www.facebook.com/ittukikerava/"><i class="fab fa-facebook-f fa-2x"></a></i>
+        
+            <a class="hover-target" href="https://www.instagram.com/mrmoonstoner666/"><i class="fab fa-instagram fa-2x"></a></i>
+            
+        </div>
+
+        <div class="header-texts">
+
+            <div class="name">
+                <h1>Arttu Stenius</h1>
             </div>
-            <div class="kuvaus-div">
+            <div class="pagetype">
+                <h2>portfolio</h2>
+            </div>
+            <div class="description">
                 <h3>Ohjelmistokehittäjäopiskelija</h3>
             </div>
+
         </div>
-            <img src="IMG/Näyttökuva 2024-01-17 195652.webp" class="img-fluid" alt="headerimage">
+
+            <img src="IMG/Näyttökuva 2024-01-17 195652.webp" class="top-photos img-fluid" alt="headerimage">
                 
     </div>
       
+
     <!-- Scroll Spy Navigation -->
-    <nav id="navbar-example2" class="navbar sticky-top bg-dark">
-        <div class="navcontainer">
+    <nav class="navbar sticky-top bg-dark">
+        <div class="container-fluid">
             <ul class="nav nav-pills">
 
                 <li class="nav-item">
@@ -84,11 +110,11 @@
 
     <!-- Scroll Spy Main Content -->
 
-    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <main data-bs-spy="scroll" data-bs-target="#portfolionav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="portfolionav" tabindex="">
         
         <!-- MINÄ OSAN ALKU -->
 
-        <section id="minä" class="minä">
+        <section id="minä" class="section">
 
             <div class="minusta-h1">
                 <div class="text-light text-center">
@@ -97,7 +123,7 @@
 
             <!-- MINÄ KUVAUKSEN SISÄLLÖN ALKU -->
 
-            <div class="minäcontainer">
+            <div class="minä-container">
                 <div class="row pt-2 pb-2 mt-5 mb-3">
                     <div class="col-md-6">
                         <div class="bg-dark text-dark bg-opacity-75 p-3">
@@ -528,6 +554,15 @@
         document.documentElement.scrollTop = 0;
         }
 </script>
+
+<script>
+            $(document).ready(function () {
+             $('.counter').counterUp({
+              delay: 13,
+              time: 1600
+             });
+            });
+        </script>
 
     <!-- Emailjs-->
 
