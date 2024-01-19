@@ -40,7 +40,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0">
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./IMG/scrollup.png"></button>
 
@@ -53,7 +53,7 @@
 
 
     <video autoplay muted loop id="videoScreen">
-        <source src="https://arttustenius.com/wp-content/uploads/2024/01/header_video3.mp4">
+        <source src="./header_video5.mp4">
     </video>
 
     <div class="header">
@@ -86,38 +86,29 @@
                 
     </div>
       
-
     <!-- Scroll Spy Navigation -->
-    <nav class="navbar sticky-top bg-dark">
+    <nav id="#navbar-example2" class="navbar sticky-top bg-dark">
         <div class="container-fluid">
-            <ul class="nav nav-pills">
+            <ul class="nav">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#minä">Minusta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#CV">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#osaaminen">Osaaminen</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakti">Kontakti</a>
-                </li>
+                <li><a href="#minä">Minusta</a></li>
+                <li><a href="#CV">CV</a></li>
+                <li><a href="#osaaminen">Osaaminen</a></li>
+                <li><a href="#kontakti">Kontakti</a></li>
+
             </ul>
         </div>
     </nav>
 
     <!-- Scroll Spy Main Content -->
 
-    <main data-bs-spy="scroll" data-bs-target="#portfolionav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="portfolionav" tabindex="">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         
         <!-- MINÄ OSAN ALKU -->
 
-        <section id="minä" class="section">
+        <section id="minä" class="minä">
 
-            <div class="minusta-h1">
-                <div class="text-light text-center">
+            <div class="minusta-h1 text-light text-center">
                 <h1>Minusta</h1>
             </div>
 
@@ -195,10 +186,9 @@
 
         <!-- CV KUVAUKSEN SISÄLLÖN ALKU -->
 
-        <section id="CV" class="section">
+        <section id="CV" class="CV">
             
-            <div class="cv-h1">
-                <div class="text-light text-center">
+            <div class="CV-h1 text-light text-center">
                 <h1>CV</h1>
             </div>
 
@@ -298,10 +288,9 @@
 
         <!--  OSAAMISEN KUVAUKSEN SISÄLLÖN ALKU -->
 
-        <section id="osaaminen" class="section">
+        <section id="osaaminen" class="osaaminen">
             
-            <div class="osaaminen-h1">
-                <div class="text-light text-center">
+            <div class="osaaminen-h1 text-light text-center">
                 <h1>Osaaminen</h1>
             </div>
 
@@ -395,10 +384,9 @@
 
         <!--  OSAAMISEN KUVAUKSEN SISÄLLÖN LOPPU -->
 
-        <section id="kontakti" class="section">
+        <section id="kontakti" class="kontakti">
             
-            <div class="kontakti-h1">
-                <div class="text-light text-center">
+            <div class="kontakti-h1 text-light text-center">
                 <h1>Kontakti</h1>
             </div>
 

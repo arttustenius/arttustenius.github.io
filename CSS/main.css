@@ -1,58 +1,62 @@
 * {
-margin: 0 auto;
-padding: 0;
 
+  margin: 0 auto;
+  padding: 0;
+ 
 }
 
 /* ############################ Body ############################ */
 
 body {
-position: relative; 
-max-width: 100%;
-height: auto;
+  position: relative; 
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
 
 }
 
 /* ############################ Teksti ############################ */
 
 p {
-font-family: 'IBM Plex Mono', monospace;
-color: #F2BB77;
-font-size:2vw;
-font-weight: 300;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #F2BB77;
+  font-size:2vw;
+  font-weight: 300;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 .text-light {
-font-family: 'IBM Plex Mono', monospace;
-font-size:2vw;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-color: #F2BB77;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size:2vw;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  color: #F2BB77;
 }
 
 a {
-font-size: 2vw;
-color:#d8b70f;
-cursor:pointer;
-font-weight:400;
-color: inherit;
-text-decoration: none;
-border-bottom: 2px solid #fff3;
+  font-size: 2vw;
+  color:#d8b70f;
+  cursor:pointer;
+  font-weight:400;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid #fff3;
 
 }
 
 a:hover {
-border-bottom-color: #fff9;
+
+  border-bottom-color: #fff9;
+
 }
 
 p a:hover {
-font-family: 'IBM Plex Mono', monospace;
-background: rgb(0,0,0,0);
-color: #d8b70f;
-cursor:pointer;
-text-decoration:underline;
-font-weight:400;
-font-size:2vw;
+  font-family: 'IBM Plex Mono', monospace;
+  background: rgb(0,0,0,0);
+  color: #d8b70f;
+  cursor:pointer;
+  text-decoration:underline;
+  font-weight:400;
+  font-size:2vw;
 
 }
 
@@ -60,14 +64,14 @@ font-size:2vw;
 
 img {
 
-width: 100%;
-height:auto;
+  width: 100%;
+  height:auto;
 
 }
 
 .display-3 {
 
-padding-top: 20px;
+  padding-top: 20px;
 
 }
 
@@ -140,14 +144,12 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
   position: absolute;
   font-size: 4vw;
   display: block;
+  z-index: 7;
 
- 
- 
-  
 }
 
 .top {
-  display: inline-block;
+  
   position: relative;
   width: 100%;
   height: auto;
@@ -311,11 +313,21 @@ font-family: 'IBM Plex Sans Condensed', sans-serif;
 text-transform: uppercase;
 color: #F2BB77;
 font-size: 2vw;
+padding-top: 5%;
+
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
 
 }
 
 .nav {
-  transition: all .35s ease;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  
 }
 
 .nav li {
@@ -323,6 +335,7 @@ font-size: 2vw;
   list-style: outside none none;
   margin: .5em 1em;
   padding: 0;
+  
 }
 
 .nav a {
@@ -371,9 +384,7 @@ font-size: 2vw;
   color: #3DA35D;
 }
 
-.nav-pills .nav-link.active {
-  background-color: transparent;
-}
+
 
 /* ############################ SECTIONS ############################ */
 
@@ -385,8 +396,8 @@ color: #ffffff;
 }
 
 .minusta-h1, .cv-h1, .osaaminen-h1, .kontakti-h1 {
-
   padding-top: 90px;
+  
 }
 
 /* ############################ LANGUAGES ICON CSS ############################ */
@@ -437,6 +448,11 @@ color: #ffffff;
   width: 50%;
   height: auto;
 
+}
+
+.kontakti-container, .osaaminen-container, .cv-container, .minä-container{
+
+  width: 90%;
 }
 
 .customForm{
