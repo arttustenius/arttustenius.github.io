@@ -32,21 +32,41 @@ p {
   color: #F2BB77;
 }
 
+/* ############################ LINKKI ############################ */
+
 a {
+
   font-size: 2vw;
   color:#d8b70f;
   cursor:pointer;
   font-weight:400;
-  color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid #fff3;
+  outline-color: transparent;
 
+}
+
+a:link {
+  color: #eae5f1;
+}
+
+a:visited {
+  color: #a5c300;
+}
+
+a:focus {
+  text-decoration: none;
+  background: #bae498;
 }
 
 a:hover {
 
   border-bottom-color: #fff9;
 
+}
+
+a:active {
+  background: #6900ff;
+  color: #cdfeaa;
 }
 
 p a:hover {
@@ -79,53 +99,57 @@ img {
 
 h1 {
 
-font-size: 8vw;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-font-weight: 400;
-text-transform: uppercase;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  font-size: 8vw;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 
 }
 
 h2, h5 {
-color: #F2BB77;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-text-transform: uppercase;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+
+  color: #F2BB77;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h3 {
-color: white;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-text-transform: uppercase;
-font-size:3vw;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+
+  color: white;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size:3vw;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h4 {
-font-size: 22px;
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-text-transform: uppercase;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+
+  font-size: 22px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h6 {
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-text-transform: uppercase;
-font-size:18px;
-padding-top: 20px;
-padding-bottom: 20px;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size:18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 
 }
 
 h6:hover {
 
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-background: rgb(0,0,0,0);
-color: #93D8FF;
-cursor:pointer;
-text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background: rgb(0,0,0,0);
+  color: #93D8FF;
+  cursor:pointer;
+  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 
 }
 
@@ -144,7 +168,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
   position: absolute;
   font-size: 4vw;
   display: block;
-  z-index: 7;
+  z-index: 0;
 
 }
 
@@ -158,6 +182,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 @keyframes remove {
+
   0%{
       opacity: 0;
   }
@@ -173,6 +198,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 .top-photos img{
+
   opacity: 0;
   animation: fadein;
   animation-delay: 2s;
@@ -180,6 +206,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 @keyframes fadein {
+
   0%{
       opacity: 0;
   }
@@ -205,24 +232,6 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
   }
 }
 
-.title {
-  margin-top: 300px;
-  position: absolute;
-  width: 80%;
-  margin-left: 10%;
-  z-index: 2;
-}
-
-.title h1 {
-  font-size: 90px;
-  font-family: 'Monoton', sans-serif;
-  color: rgb(61, 226, 43);
-
-}
-
-.subtitle {
-  font-size: 25px;
-}
 
 /* ############################ Header ############################ */
 
@@ -239,6 +248,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 .header-texts{
+
   display: block;
   position: absolute;
   width: 100%;
@@ -247,6 +257,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 .name h1 {
+
   position: absolute;
   max-width: 100%;
   text-align: left;
@@ -259,6 +270,7 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 }
 
 .header .pagetype h2 {
+
   position: absolute;
   text-align: left;
   padding-left: 2%;
@@ -282,27 +294,36 @@ text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1p
 /* ############################ SOCIAL MEDIA LINKS ############################ */
 
 .header .socialmedialinks {
+
   display: inline-block;
   position: absolute;
   text-align: left;
-  padding-left: 80%;
+  padding-left: 70%;
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   z-index: 4;
 
 }
 
+.fa-linkedin, .fa-facebook-f, .fa-instagram {
+
+margin-right: 15px;
+
+}
+  
+
 /* ############################ VIDEOSCREEN ############################ */
 
 *#videoScreen {
-filter:blur(5px);
-position: fixed;
-top:0;
-left:0;
-width: 100%;
-height:100vh;
-object-fit: fill;
-z-index:-1;
+
+  filter:blur(5px);
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100vh;
+  object-fit: fill;
+  z-index:-1;
 }
 
 /* ############################ NAVBAR ############################ */
@@ -384,8 +405,6 @@ padding-top: 5%;
   color: #3DA35D;
 }
 
-
-
 /* ############################ SECTIONS ############################ */
 
 .section {
@@ -454,6 +473,8 @@ color: #ffffff;
 
   width: 90%;
 }
+
+/* ############################ CUSTOMFORM ############################ */
 
 .customForm{
   margin-top: 5%;
