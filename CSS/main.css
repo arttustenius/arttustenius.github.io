@@ -578,16 +578,17 @@ h6:hover {
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   z-index: 4;
+  
 
 }
 
-.fa-linkedin, .fa-facebook-f, .fa-instagram {
+.fa-linkedin-in, .fa-linkedin, .fa-facebook-f, .fa-instagram, .fa-github {
 
   padding-left: 15px;
   padding-top: 8%;
+  color: white;
 
 }
-  
 
 /* ############################ VIDEOSCREEN ############################ */
 
