@@ -37,7 +37,7 @@ p {
 a {
 
   font-size: 2vw;
-  color:#d8b70f;
+  color: #ffffff;
   cursor:pointer;
   font-weight:400;
   text-decoration: none;
@@ -47,10 +47,6 @@ a {
 
 a:link {
   color: #eae5f1;
-}
-
-a:visited {
-  color: #a5c300;
 }
 
 a:focus {
