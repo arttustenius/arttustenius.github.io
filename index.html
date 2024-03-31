@@ -4,6 +4,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index">
+    <title>Arttu Stenius Digital CV</title>
+    <meta name="description" content="Arttu Stenius | Digitaalinen CV"/>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -15,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 
     <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
     <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
@@ -22,21 +28,6 @@
     <!-- GOOGLE FONTS & FONTAWESOME -->
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script> 
-        $(document).ready(function () { 
-            $('body').scrollspy({ 
-            target: ".navbar", offset: 50
-            }); 
-        }); 
-
-    </script> 
-
-    <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@100;200;300;400;500&family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
-
-    </style>
 
 </head>
 
@@ -312,7 +303,7 @@
                     </div>
 
                     <div class="customForm">
-                        <h4 class="text-center">Yhteydenottolomake</h4>
+                        <h3 class="text-center">Yhteydenottolomake</h3>
                         <form class="needs-validation">
                             <div class="row g-3">
                                 <div class="col-sm-6">
@@ -415,16 +406,16 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
-</script>
+    </script>
 
-<script>
-            $(document).ready(function () {
-             $('.counter').counterUp({
-              delay: 13,
-              time: 1600
-             });
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+            delay: 13,
+            time: 1600
             });
-        </script>
+        });
+    </script>
 
     <!-- Emailjs-->
 
@@ -436,5 +427,15 @@
         emailjs.init("XQMrkTGxtesOUrCdz");
     })();
     </script>
+
+    <script> 
+        $(document).ready(function () { 
+            $('body').scrollspy({ 
+            target: ".navbar", offset: 50
+            }); 
+        }); 
+
+    </script> 
+    
 </body>
 </html>
