@@ -64,7 +64,6 @@ form.addEventListener('submit', e => {
     } else showAlert('alert-danger', 'Ole hyvä ja täytä kentät oikein!');
 });
 
-// Emailjs
 function sendEmail() {
     let templateParams = {
         lastname: userLastname.value,
@@ -73,6 +72,8 @@ function sendEmail() {
         message: userMessage.value,
     };
 
+    console.log("Lähetetään sähköposti näillä tiedoilla:", templateParams);
+
     const serviceID = 'service_idkn6xd';
     const templateID = 'template_pz0ov94';
 
@@ -80,7 +81,7 @@ function sendEmail() {
         .send(serviceID, templateID, templateParams)
         .then(res => console.log('Onnistui!', res.status, res.text))
         .catch(err => console.log('Epäonnistui...', err));
-};
+}
 
 $(document).ready(function () { 
     $('body').scrollspy({ target: ".navbar", offset: 50 }); 

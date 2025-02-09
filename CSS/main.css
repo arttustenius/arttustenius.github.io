@@ -535,7 +535,7 @@ h6:hover {
   max-width: 600px;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
   /* Lisätty fadeIn animaatio lomakkeen ilmestymiseen */
   animation: fadeIn 1.5s ease-out;
 }
@@ -637,5 +637,31 @@ h6:hover {
   /* Esimerkiksi h2 ja h5: */
   h2, h5 {
     font-size: 3vw;  /* Tämä on esimerkki, säädä tarpeen mukaan */
+  }
+}
+
+
+/* ############################ Mobile Overrides (max-width: 768px) ############################ */
+@media only screen and (max-width: 768px) {
+  /* Sarakkeet vievät 100% leveyttä mobiilissa */
+  .col-md-6 {
+    width: 100% !important;
+  }
+  
+  /* Kasvatetaan fonttikokoa, jotta teksti ei ole liian pientä */
+  p, .text-light, a {
+    font-size: 16px !important;
+  }
+  
+  h1 {
+    font-size: 32px !important;
+  }
+  
+  h2, h3, h5, h6 {
+    font-size: 24px !important;
+  }
+
+  .socialmedialinks a i {
+    font-size: 2rem;
   }
 }
