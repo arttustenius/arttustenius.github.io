@@ -1,441 +1,326 @@
 <!DOCTYPE html>
 <html lang="fi" data-bs-theme="dark">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow, index">
+  <title>Arttu Stenius Digital CV</title>
+  <meta name="description" content="Arttu Stenius | Digitaalinen CV"/>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="follow, index">
-    <title>Arttu Stenius Digital CV</title>
-    <meta name="description" content="Arttu Stenius | Digitaalinen CV"/>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-
-    <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
-    <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
-
-    <!-- GOOGLE FONTS & FONTAWESOME -->
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <!-- Kirjastot -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  
+  <link type="text/css" rel="stylesheet" href="./CSS/main.css" />
+  <link rel="icon" type="image/x-icon" href="/IMG/favicon.ico">
+  
+  <!-- GOOGLE FONTS & FONTAWESOME -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="70">
+  <!-- Scroll to top -painike -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="./IMG/scrollup.png" alt="Ylös">
+  </button>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0">
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./IMG/scrollup.png"></button>
-
-    <div class="top">
-        <div class="loading-box">
-            <div class="loading">Loading</div>
-            <div class="counter">100</div>%
-        </div>
+  <div class="top">
+    <div class="loading-box">
+      <div class="loading">Loading</div>
+      <div class="counter">100</div>%
     </div>
+  </div>
 
+  <video autoplay muted loop id="videoScreen">
+    <source src="./header_video6.mp4" type="video/mp4">
+  </video>
 
-    <video autoplay muted loop id="videoScreen">
-        <source src="./header_video6.mp4">
-    </video>
-
-    <div class="header">
-
-        <div class="socialmedialinks">
-
-            <a class="hover-target" href="https://www.linkedin.com/in/arttu-stenius/"><i class="fa-brands fa-linkedin fa-3x"></a></i>
-        
-            <a class="hover-target" href="https://www.facebook.com/ittukikerava/"><i class="fab fa-facebook-f fa-3x"></a></i>
-        
-            <a class="hover-target" href="https://www.instagram.com/mrmoonstoner666/"><i class="fab fa-instagram fa-3x"></a></i>
-            
-        </div>
-
-        <div class="header-texts">
-
-            <div class="name">
-                <h1>Arttu Stenius</h1>
-            </div>
-            <div class="pagetype">
-                <h2></h2>
-            </div>
-            <div class="description">
-                <h3>DIGITAALINEN CV</h3>
-            </div>
-            
-
-        </div>
-
-            <img src="IMG/Näyttökuva 2024-01-17 195652.webp" class="top-photos img-fluid" alt="headerimage">
-                
+  <div class="header">
+    <div class="socialmedialinks">
+      <a class="hover-target" href="https://www.linkedin.com/in/arttu-stenius/">
+        <i class="fa-brands fa-linkedin fa-3x"></i>
+      </a>
+      <a class="hover-target" href="https://www.facebook.com/ittukikerava/">
+        <i class="fab fa-facebook-f fa-3x"></i>
+      </a>
+      <a class="hover-target" href="https://www.instagram.com/mrmoonstoner666/">
+        <i class="fab fa-instagram fa-3x"></i>
+      </a>
     </div>
-      
-    <!-- Scroll Spy Navigation -->
-    <nav id="#navbar-example2" class="navbar sticky-top bg-dark">
-        <div class="container-fluid">
-            <ul class="nav">
-
-                <li><a href="#minä">Minusta</a></li>
-                <li><a href="#CV">CV</a></li>
-                <li><a href="#kontakti">Kontakti</a></li>
-
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Scroll Spy Main Content -->
-
-    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-        
-        <!-- MINÄ OSAN ALKU -->
-
-        <section id="minä" class="minä">
-
-            <div class="minusta-h1 text-light text-center">
-                <h1>Minusta</h1>
-            </div>
-
-            <!-- MINÄ KUVAUKSEN SISÄLLÖN ALKU -->
-
-            <div class="minä-container">
-                <div class="row pt-2 pb-2 mt-5 mb-3">
-                    <div class="col-md-6">
-                        <div class="bg-dark text-dark bg-opacity-75 p-3">
-                        
-                            <div class="profile-image">
-                                <img src="IMG/Arttu profile.webp" alt="">
-                            </div>
-
-                                <h3 class="text-start pt-3">
-                                Sukunimi:
-                                </h3>
-                                <p class="fw-lighter text-start">
-                                Stenius</p>
-                                <h3 class="text-start">
-                                Etunimi:
-                                </h3>
-                                <p class="fw-lighter text-start">
-                                Arttu</p>
-                                <h3 class="text-start">
-                                Kotikaupunki:
-                                </h3>
-                                <p class="fw-lighter text-start">
-                                Kerava</p>
-                                <h3 class="text-start">
-                                    Status:
-                                </h3>
-                                <p class="fw-lighter text-start">
-                                Ohjelmistokehittäjäopiskelija</p>
-                        </div>
-                    </div>
-                   
-                    
-                    <div class="col-md-6">
-                        <div class="bg-dark text-dark bg-opacity-75 p-3">
-
-                            <h3 class="text-left">Tietoa tutkinnosta</h3>
-                            <p class="fw-lighter text-start">
-                        
-                                <a href="https://www.taitotalo.fi/">Taitotalon</a> tieto- ja viestintätekniikan perustutkinto (web-kehitys) painottuu pääasiassa Front Endiin.<br>
-                                <br>
-                            
-                                Pääsen päivittämään opintojeni aikana aikaisempaa osaamistani web-ohjelmoinnissa tutustuen vielä syvemmin HTML, CSS ja JavaScript-kieliin.<br>
-                                <br> 
-                                Koulutuksen aikana tutuksi tulevat myös mm.  Node.js, WordPress ja Bootstrap. SQL-tietokannat, UX/UI- käyttöliittymäsuunnittelu sekä verkon aktiivilaitteet.
-                            
-                                Lisää koulutuksesta voit lukea <a href="https://eperusteet.opintopolku.fi/#/fi/ammatillinen/6779583/tiedot">täältä!</a></p>
-
-                            
-                        </div>
-
-                        <div class="harrastukset">
-                            <div class="bg-dark text-dark bg-opacity-75 p-3">
-                                <h3 class="text-center ">Harrastukset</h3>
-                                <div class="text-light list-group text-center list-group-item-dark ">
-                                    <button type="button" class="list-group-item list-group-item-action">Musiikki</button>
-                                    <button type="button" class="list-group-item list-group-item-action">Elektroniikka</button>
-                                    <button type="button" class="list-group-item list-group-item-action">Kuntosali</button>
-                                    <button type="button" class="list-group-item list-group-item-action">Retkeily</button>
-                                    <button type="button" class="list-group-item list-group-item-action">Pelaaminen</button>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- MINÄ KUVAUKSEN SISÄLLÖN LOPPU -->
-
-        <!-- CV KUVAUKSEN SISÄLLÖN ALKU -->
-
-        <section id="CV" class="CV">
-            
-            <div class="CV-h1 text-light text-center">
-                <h1>CV</h1>
-            </div>
-
-            <div class="cv-container">
-                <div class="row pt-2 pb-2 mt-5 mb-3">
-                    <div class="col-md-6">
-                        <div class="bg-dark text-light bg-opacity-75 p-3">
-
-                            <p class="text-light text-start">
-                                <i class="fa-solid fa-phone"></i> 044 351 92 65</p>
-                            
-                            <p class="text-light text-start">
-                            <i class="fa-regular fa-envelope"></i><a href="mailto:kontakti@arttustenius.com"> kontakti@arttustenius.com</a></p>
-
-                            <p class="text-light text-start">
-                            <i class="fa-solid fa-house"></i><a href="https://arttustenius.com/"> https://arttustenius.com/</a></p>
-
-                            <p class="text-light text-start">
-                            <i class="fa-solid fa-location-dot"></i> Kerava, Savio</p>
-                            
-                            <h3 class="text-start pt-3">Työdemot / Sivut</h3>
-
-                            <a href="https://bilebandijoyride.com/">bilebandijoyride.com/</a><br>
-                            <a href="https://spiderlegsproductions.com/">spiderlegsproductions.com/</a><br>
-
-                            <h3 class="text-start pt-3">Kielitaito</h3>
-
-                            <p class="fw-lighter text-start">
-                            Suomi - Äidinkieli<br>
-                            Englanti - Hyvä<br>
-                            Ruotsi - Alkeet<br>
-                            </p>
-
-                            <img src="IMG/Näyttökuva 2024-01-17 202400.webp" class="img-fluid" alt="headerimage">
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bg-dark text-dark bg-opacity-75 p-3">
-                            <h3 class="text-start">Koulutus</h3>
-
-                            <p class="fw-bold text-start">
-                            Taitotalo, Helsinki</p>
-
-                            <p class="fw-lighter text-start">
-                            Tieto-ja viestintätekniikan perustutkinto / web-kehitys 10/2023 -</p>
-
-                            <p class="fw-bold text-start">
-                                Keski-Uudenmaan koulutuskuntaryhmä (Keuda)</p>
+    <div class="header-texts">
+      <div class="name">
+        <h1>Arttu Stenius</h1>
+      </div>
+      <div class="pagetype">
+        <h2></h2>
+      </div>
+      <div class="description">
+        <h3>DIGITAALINEN CV</h3>
+      </div>
+    </div>
+    <img src="IMG/vlcsnap-2024-09-28-16h16m06s204.jpg" class="top-photos img-fluid" alt="headerimage">
+  </div>
     
-                            <p class="fw-lighter text-start">
-                                Rakennusalan perustutkinto / Talonrakentaja 11/2021 - 08/2023</p>
+  <!-- Scroll Spy Navigation -->
+  <nav id="navbar-example2" class="navbar sticky-top bg-dark">
+    <div class="container-fluid">
+      <ul class="nav">
+        <li><a href="#minä">Minusta</a></li>
+        <li><a href="#CV">CV</a></li>
+        <li><a href="#kontakti">Kontakti</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                            <hr>
-
-                            <h3 class="text-start">Työkokemus</h3>
-
-                            <p class="fw-bold text-start">
-                                Puukoti Group Oy</p>
-
-                            <p class="fw-lighter text-start">
-                                Tuotantotyöntekijä /
-                                oppisopimus 11/2021–5/2023
-                                <br><br>
-                                Tehtävät: Palokatko- ja väliseinien rakentaminen,
-                                sisäkattojen / sähkökaapeleiden asennusta ja muita
-                                sekalaisia tehtaan tuotannon työtehtäviä.</p>
-
-                            <p class="fw-bold text-start">
-                                Spiderlegs productions</p>
-
-                            <p class="fw-lighter text-start">
-                                Toiminimi, yrittäjä 05/2021 -<br><br>
-                                Tehtävät: Äänentoiston- ja esitystekniikan
-                                vuokraus, IT-tukipalvelu, WordPress-sivujen kehitys ja ylläpito.
-                            </p>
-                            
-                            <p class="fw-bold text-start">
-                                HKL-Raitioliikenne</p>
-
-                            <p class="fw-lighter text-start">
-                                Raitiovaununkuljettaja 01/2013–11/2021<br><br>
-                                Tehtävät: Raitiovaununkuljettajan työt sekä siihen liittyvä
-                                asiakaspalvelu.
-
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
+  <!-- Scroll Spy Main Content -->
+  <main data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <!-- MINÄ OSAN ALKU -->
+    <section id="minä" class="minä">
+      <div class="minusta-h1 text-light text-center">
+        <h1>Minusta</h1>
+      </div>
+      <!-- MINÄ KUVAUKSEN SISÄLLÖN ALKU -->
+      <div class="minä-container">
+        <div class="row pt-2 pb-2 mt-5 mb-3">
+          <div class="col-md-6">
+            <div class="bg-dark text-dark bg-opacity-75 p-3">
+              <div class="profile-image">
+                <img src="IMG/Arttu profile.webp" alt="Profiilikuva">
+              </div>
+              <h3 class="text-start pt-3">Sukunimi:</h3>
+              <p class="fw-lighter text-start">Stenius</p>
+              <h3 class="text-start">Etunimi:</h3>
+              <p class="fw-lighter text-start">Arttu</p>
+              <h3 class="text-start">Kotikaupunki:</h3>
+              <p class="fw-lighter text-start">Kerava</p>
+              <h3 class="text-start">Status:</h3>
+              <p class="fw-lighter text-start">Front-end ohjelmistokehittäjä</p>
             </div>
-        </section>
-
-        <!--  CV KUVAUKSEN SISÄLLÖN LOPPU -->
-
-        <section id="kontakti" class="kontakti">
-            
-            <div class="kontakti-h1 text-light text-center">
-                <h1>Kontakti</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark text-dark bg-opacity-75 p-3">
+              <h3 class="text-left">Osaaminen & kokemus:</h3>
+              <p class="fw-lighter text-start">
+                mm. HTML, CSS, JavaScript, React, Firebase,<br>
+                SQL, WordPress, Bootstrap, Tailwind CSS, VS Code, Visual Studio, Github,<br>
+                cPanel, Jira, Figma, Adobe Photoshop, Microsoft 365, Studio One, VMware,<br>
+                Slack, Google Drive, Dropbox, ChatGPT, Google Gemini, tekoälykuvat.
+              </p>
+              <p class="fw-lighter text-start">
+                Olen 45-vuotias front end-kehittäjä Keravalta, valmistuin tammikuussa 2025 Taitotalossa suoritetusta tieto- ja viestintätekniikan perustutkinnosta (ohjelmistokehittäjä) keskiarvolla 4.73.<br><br>
+                Tutkinto painottui pääasiassa Front End -kehitykseen, ja opintojeni aikana olen syventänyt osaamistani muun muassa HTML:n, CSS:n ja JavaScriptin parissa.<br><br>
+                Koulutuksen aikana olen myös tutustunut Node.js:n, WordPressin ja Bootstrapin käyttöön sekä oppinut työskentelemään SQL-tietokantojen, UX/UI-suunnittelun ja verkon aktiivilaitteiden parissa.
+              </p>
             </div>
-
-            <div class="kontakti-container">
-                <div class="row pt-2 pb-2 mt-5 mb-3 bg-dark opacity-75">
-
-                    <div class="col-md-6">
-
-                            <img src="./IMG/Näyttökuva 2024-01-17 194647.webp">
-                    
-                    </div>
-
-                    <div class="col-md-6">
-                            <p>Olen aktiivisesti etsimässä työpaikkaa tai oppisopimusmahdollisuutta.<br><br>
-
-                            Koulutukseni, intohimoni ja harrastuneisuuteni ohjelmointia kohtaan antavat minulle hyvän perustan, jota olen valmis soveltamaan oppimaani käytännössä.<br><br>
-                            
-                            Olen erityisen kiinnostunut kehittämään taitojani ohjelmistokehityksen, web-sovellusten suunnittelun ja datan käsittelyn parissa.<br><br>
-                            
-                            Jos olette avoimia tarjoamaan oppimismahdollisuuksia ja haluatte osaavan ja motivoituneen opiskelijan tiimiinne, otathan yhteyttä. Voitte tavoittaa minut alla olevan yhteydenottolomakkeen kautta.<br><br>
-                            </p>
-
-                    </div>
-
-                    <div class="customForm">
-                        <h3 class="text-center">Yhteydenottolomake</h3>
-                        <form class="needs-validation">
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <label for="lastname" class="form-label">Sukunimi :</label>
-                                    <input type="text" class="form-control" id="lastname">
-                                    <div class="valid-feedback">
-                                        Hyvältä näyttää!
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        2-15 merkkiä sallittu.
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="firstname" class="form-label">Etunimi :</label>
-                                    <input type="text" class="form-control" id="firstname">
-                                    <div class="valid-feedback">
-                                        Oikein hyvä!
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        2-15 merkkiä sallittu.
-                                    </div>
-                                </div>
-                                <div>
-                                    <label class="form-label" for="email">Sähköposti :</label>
-                                    <input type="email" class="form-control" id="email">
-                                    <div class="valid-feedback">
-                                        Mahtavaa!
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Anna kunnollinen sähköpostiosoite!
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="message" class="form-label">Viestisi :</label>
-                                    <textarea type="text" class="form-control" id="message" rows="5"></textarea>
-                                    <div class="valid-feedback">
-                                        Kiitos!
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Anna ainakin 10 kirjainta.
-                                    </div>
-                                </div>
-                                
-                                <div class="d-grid col-sm-6 mx-auto">
-                                    <button type="submit" class="btn btn-success">Lähetä</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>  
-            </div> 
-        </section>      
-
-        <footer class="col-md-12 text-center text-light">
-          
-                <div class="footer-socialmedialinks">
-                
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/ittukikerava/"><i class="fab fa-facebook-f fa-2x" style="color: #86A69D"></i></a>
-            
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/mrmoonstoner666/"><i class="fab fa-instagram fa-2x" style="color: #86A69D;"></i></a>
-            
-                    <!-- Linkedin -->
-                    <a href="https://www.linkedin.com/in/arttu-stenius/"><i class="fab fa-linkedin-in fa-2x" style="color: #86A69D;"></i></a>
-
-                    <!-- Github -->
-                    <a href="https://arttustenius.github.io"><i class="fab fa-github fa-2x" style="color: #86A69D;"></i></a>
-
+            <div class="harrastukset">
+              <div class="bg-dark text-dark bg-opacity-75 p-3">
+                <h3 class="text-center">Harrastukset</h3>
+                <div class="text-light list-group text-center list-group-item-dark">
+                  <button type="button" class="list-group-item list-group-item-action">Musiikki</button>
+                  <button type="button" class="list-group-item list-group-item-action">Elektroniikka</button>
+                  <button type="button" class="list-group-item list-group-item-action">Sisäpyöräily</button>
+                  <button type="button" class="list-group-item list-group-item-action">Retkeily</button>
+                  <button type="button" class="list-group-item list-group-item-action">Pelaaminen</button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MINÄ OSAN LOPPU -->
 
-                <div class="text-light text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    <p>Copyright © 2024
-                    <a class="text-light" href="https://arttustenius.com/">Arttu Stenius</a>
-                    Kaikki oikeudet pidetään.</p>
-                </div>
-        </footer>
-    </main>
+    <!-- CV OSAN ALKU -->
+    <section id="CV" class="CV">
+      <div class="CV-h1 text-light text-center">
+        <h1>CV</h1>
+      </div>
+      <div class="cv-container">
+        <div class="row pt-2 pb-2 mt-5 mb-3">
+          <div class="col-md-6">
+            <div class="bg-dark text-light bg-opacity-75 p-3">
+              <p class="text-light text-start">
+                <i class="fa-solid fa-phone"></i> 044 351 92 65
+              </p>
+              <p class="text-light text-start">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:kontakti@arttustenius.com" class="text-light"> kontakti@arttustenius.com</a>
+              </p>
+              <p class="text-light text-start">
+                <i class="fa-solid fa-house"></i>
+                <a href="https://arttustenius.com/" class="text-light"> https://arttustenius.com/</a>
+              </p>
+              <p class="text-light text-start">
+                <i class="fa-solid fa-location-dot"></i> Kerava, Savio
+              </p>
+              <h3 class="text-start pt-3">Työdemot / Sivut</h3>
+              <a href="https://bilebandijoyride.com/" class="text-light">bilebandijoyride.com/</a><br>
+              <a href="https://spiderlegsproductions.com/" class="text-light">spiderlegsproductions.com/</a><br>
+              <h3 class="text-start pt-3">Kielitaito</h3>
+              <p class="fw-lighter text-start">
+                Suomi - Äidinkieli<br>
+                Englanti - Hyvä<br>
+                Ruotsi - Alkeet<br>
+              </p>
+              <img src="IMG/Näyttökuva 2024-01-17 202400.webp" class="img-fluid" alt="CV-kuva">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-dark text-dark bg-opacity-75 p-3">
+              <h3 class="text-start">Koulutus</h3>
+              <p class="fw-bold text-start">Taitotalo, Helsinki</p>
+              <p class="fw-lighter text-start">
+                Tieto-ja viestintätekniikan perustutkinto / Ohjelmistokehittäjä 10/2023 - 01/2025
+              </p>
+              <p class="fw-bold text-start">Keski-Uudenmaan koulutuskuntaryhmä (Keuda)</p>
+              <p class="fw-lighter text-start">
+                Rakennusalan perustutkinto / Talonrakentaja 11/2021 - 08/2023
+              </p>
+              <hr>
+              <h3 class="text-start">Työkokemus</h3>
+              <p class="fw-bold text-start">Timehouse Oy / Ohjelmistokehittäjä</p>
+              <p class="fw-lighter text-start">
+                10/2024 - 31.12.2024 (työharjoittelu),<br>
+                02.01.2025 -<br><br>
+                Tehtävät: Ohjelmistokehittäjän työt, käyttöliittymien kehitys, verkkosivujen ylläpitotehtävät.
+              </p>
+              <p class="fw-bold text-start">Puukoti Group Oy / Tuotantotyöntekijä</p>
+              <p class="fw-lighter text-start">
+                Oppisopimus | 11/2021 - 5/2023<br><br>
+                Tehtävät: Palokatko- ja väliseinien rakentaminen, sisäkattojen / sähkökaapeleiden asennus sekä muita tehtaan tuotannon työtehtäviä.
+              </p>
+              <p class="fw-bold text-start">Spiderlegs productions</p>
+              <p class="fw-lighter text-start">
+                Toiminimi, yrittäjä | 05/2021 -<br><br>
+                Tehtävät: Äänentoiston- ja esitystekniikan vuokraus, asiakaspalvelu, verkkosivujen kehitys ja ylläpito.
+              </p>
+              <p class="fw-bold text-start">HKL-Raitioliikenne</p>
+              <p class="fw-lighter text-start">
+                Raitiovaununkuljettaja | 01/2013 - 11/2021<br><br>
+                Tehtävät: Raitiovaununkuljettajan työt sekä siihen liittyvä asiakaspalvelu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CV OSAN LOPPU -->
 
-    <script src="./app.js"></script>
+    <!-- KONTAKTI-OSIO -->
+    <section id="kontakti" class="kontakti py-5 bg-dark">
+      <div class="container">
+        <!-- Muutettu kontakti-osion otsikko vastaamaan CV-osion otsikon tyyliä -->
+        <div class="CV-h1 text-light text-center">
+          <h1>Kontakti</h1>
+        </div>
+        <div class="row align-items-center">
+          <!-- Kuvan sarake -->
+          <div class="col-md-6">
+            <img src="./IMG/IMG-20230708-WA0032 kopio 2.jpg" class="img-fluid" alt="Kontaktikuva">
+          </div>
+          <!-- Tekstin sarake -->
+          <div class="col-md-6">
+            <p class="text-light">
+              Olen avoin uusille yhteistyöideoille ja tilaustöille myös freelancerina työni ohessa.<br><br>
+              Tarjoan ammattitaitoista palvelua verkkosivujen suunnitteluun ja toteutukseen sekä graafiseen suunnitteluun – olipa kyseessä yrityksen verkkosivut, brändäys, logojen suunnittelu tai muu visuaalinen sisältö. Räätälöin jokaisen projektin asiakkaan tarpeiden mukaan, jotta lopputulos tukee yrityksesi imagoa ja tavoitteita.<br><br>
+              Jos sinulla on idea tai tarvetta digitaalisiin ratkaisuihin, ota rohkeasti yhteyttä. Keskustellaan, miten voimme yhdessä viedä visiosi uudelle tasolle!
+            </p>
+          </div>
+        </div>
+        <!-- Yhteydenottolomake -->
+        <div class="customForm mt-5">
+          <h3 class="text-center">Yhteydenottolomake</h3>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="lastname" class="form-label">Sukunimi :</label>
+                <input type="text" class="form-control" id="lastname" required>
+                <div class="valid-feedback">Hyvältä näyttää!</div>
+                <div class="invalid-feedback">2-15 merkkiä sallittu.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="firstname" class="form-label">Etunimi :</label>
+                <input type="text" class="form-control" id="firstname" required>
+                <div class="valid-feedback">Oikein hyvä!</div>
+                <div class="invalid-feedback">2-15 merkkiä sallittu.</div>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Sähköposti :</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="valid-feedback">Mahtavaa!</div>
+                <div class="invalid-feedback">Anna kunnollinen sähköpostiosoite!</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Viestisi :</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div class="valid-feedback">Kiitos!</div>
+                <div class="invalid-feedback">Anna ainakin 10 kirjainta.</div>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success">Lähetä</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- KONTAKTI-OSION LOPPU -->
 
-    <script>
-    // Get the button
-        let mybutton = document.getElementById("myBtn");
+    <!-- Footer -->
+    <footer class="text-center text-light py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="footer-socialmedialinks mb-2">
+        <a href="https://www.facebook.com/mrmoonstoner/"><i class="fab fa-facebook-f fa-2x" style="color: #86A69D"></i></a>
+        <a href="https://www.instagram.com/mrmoonstoner666/"><i class="fab fa-instagram fa-2x" style="color: #86A69D;"></i></a>
+        <a href="https://www.linkedin.com/in/arttu-stenius/"><i class="fab fa-linkedin-in fa-2x" style="color: #86A69D;"></i></a>
+        <a href="https://github.com/arttustenius"><i class="fab fa-github fa-2x" style="color: #86A69D;"></i></a>
+      </div>
+      <p>
+        Copyright © 2025 
+        <a class="text-light" href="https://arttustenius.com/">Arttu Stenius</a>
+        Kaikki oikeudet pidetään.
+      </p>
+    </footer>
+  </main>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        }
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            $('.counter').counterUp({
-            delay: 13,
-            time: 1600
-            });
-        });
-    </script>
-
-    <!-- Emailjs-->
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
+  <!-- Skriptit -->
+  <script src="./app.js"></script>
+  <script>
+    // Scroll to top -toiminto
+    const mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.counter').counterUp({
+        delay: 13,
+        time: 1600
+      });
+    });
+  </script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
     (function(){
-        emailjs.init("XQMrkTGxtesOUrCdz");
+      emailjs.init("XQMrkTGxtesOUrCdz");
     })();
-    </script>
-
-    <script> 
-        $(document).ready(function () { 
-            $('body').scrollspy({ 
-            target: ".navbar", offset: 50
-            }); 
-        }); 
-
-    </script> 
-    
+  </script>
 </body>
 </html>

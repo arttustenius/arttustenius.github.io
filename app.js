@@ -73,11 +73,15 @@ function sendEmail() {
         message: userMessage.value,
     };
 
-    const serviceID = 'service_c61aduk';
-    const templateID = 'template_s3urnjd';
+    const serviceID = 'service_idkn6xd';
+    const templateID = 'template_pz0ov94';
 
     emailjs
         .send(serviceID, templateID, templateParams)
         .then(res => console.log('Onnistui!', res.status, res.text))
         .catch(err => console.log('Epäonnistui...', err));
 };
+
+$(document).ready(function () { 
+    $('body').scrollspy({ target: ".navbar", offset: 50 }); 
+});

@@ -1,48 +1,48 @@
+/* ############################ Global Reset & Box Sizing ############################ */
 * {
-
   margin: 0 auto;
   padding: 0;
- 
+  box-sizing: border-box;
 }
 
-/* ############################ Body ############################ */
-
+/* ############################ Body & Taustat ############################ */
 body {
   position: relative; 
   max-width: 100%;
   height: auto;
   overflow-x: hidden;
-
+  font-family: "Ubuntu", sans-serif;
+  /* Taustaksi gradientti – voit muokata värejä mieleiseksesi */
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  color: #F2BB77;
 }
 
-/* ############################ Teksti ############################ */
-
+/* ############################ Tekstityylit ############################ */
 p {
   font-family: "Ubuntu", sans-serif;
   color: #F2BB77;
-  font-size:2vw;
+  font-size: 2vw;
   font-weight: 300;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  margin-bottom: 1em;
 }
 
 .text-light {
   font-family: "Ubuntu", sans-serif;
-  font-size:2vw;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  font-size: 2vw;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
   color: #F2BB77;
 }
 
 /* ############################ LINKKI ############################ */
-
 a {
-
   font-size: 2vw;
   color: #ffffff;
-  cursor:pointer;
-  font-weight:400;
+  cursor: pointer;
+  font-weight: 400;
   text-decoration: none;
   outline-color: transparent;
-
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:focus {
@@ -51,104 +51,87 @@ a:focus {
 }
 
 a:hover {
-
   border-bottom-color: #fff9;
-
+  color: #d8b70f;
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
 a:active {
   background: #6900ff;
   color: #cdfeaa;
+  transform: scale(0.98);
 }
 
 p a:hover {
   font-family: "Ubuntu", sans-serif;
-  background: rgb(0,0,0,0);
+  background: transparent;
   color: #d8b70f;
-  cursor:pointer;
-  text-decoration:underline;
-  font-weight:400;
-  font-size:2vw;
-
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 2vw;
 }
 
 /* ############################ Images ############################ */
-
 img {
-
   width: 100%;
-  height:auto;
-
+  height: auto;
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.02);
 }
 
-.display-3 {
-
-  padding-top: 20px;
-
-}
-
-/* ############################ h1, h2, h3, h4, h5, h6 ############################ */
-
+/* ############################ Otsikot (h1-h6) ############################ */
 h1 {
-
   font-size: 8vw;
   font-family: "Staatliches", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h2, h5 {
-
   color: #F2BB77;
   font-family: "Staatliches", sans-serif;
   text-transform: uppercase;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h3 {
-
   color: white;
   font-family: "Staatliches", sans-serif;
   text-transform: uppercase;
-  font-size:3vw;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  font-size: 3vw;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h4 {
-
   font-size: 22px;
   font-family: "Staatliches", sans-serif;
   text-transform: uppercase;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
 h6 {
-  
   font-family: "Staatliches", sans-serif;
   text-transform: uppercase;
-  font-size:18px;
+  font-size: 18px;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
-
 h6:hover {
-
   font-family: "Staatliches", sans-serif;
-  background: rgb(0,0,0,0);
+  background: transparent;
   color: #93D8FF;
-  cursor:pointer;
-  text-shadow:rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
-
+  cursor: pointer;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) -1px 0px 1px;
 }
 
-/* ############################ PROFILE IMAGE ############################ */
-
+/* ############################ PROFILE IMAGE / LOADING ANIMAATIO ############################ */
 .loading-box {
-  
   width: 100%;
   height: auto;
   padding-left: 150px;
@@ -161,95 +144,57 @@ h6:hover {
   font-size: 4vw;
   display: block;
   z-index: 0;
-
 }
 
 .top {
-  
   position: relative;
   width: 100%;
   height: auto;
-  z-index:0;
+  z-index: 0;
   animation: remove 20s;
 }
 
 @keyframes remove {
-
-  0%{
-      opacity: 0;
-  }
-  1%{
-      opacity: 1;
-  }
-  15%{
-      opacity: 1;
-  }
-  16%{
-      opacity: 0;
-  }
+  0% { opacity: 0; }
+  1% { opacity: 1; }
+  15% { opacity: 1; }
+  16% { opacity: 0; }
 }
 
-.top-photos img{
-
+.top-photos img {
   opacity: 0;
-  animation: fadein;
+  animation: fadein 6s forwards;
   animation-delay: 2s;
-  
 }
 
 @keyframes fadein {
-
-  0%{
-      opacity: 0;
-  }
-
-  40%{
-      opacity: 0;
-      transform: rotate3d(-285, 85, 30, 90deg);
-  }
-
-  60%{
-      opacity: 1;
-      transform: none;
-      
-  }
-  
-  90%{
-      opacity: 1;
-      
-  }
-  100%{
-    opacity: 1;
-    
-  }
+  0% { opacity: 0; }
+  40% { opacity: 0; transform: rotate3d(-285, 85, 30, 90deg); }
+  60% { opacity: 1; transform: none; }
+  90% { opacity: 1; }
+  100% { opacity: 1; }
 }
 
-
 /* ############################ Header ############################ */
-
 .header {
-
   display: inline-block;
   position: relative;
-  opacity:0.85;
+  opacity: 0.85;
   width: 100%;
   height: auto;
   color: white;
   font-size: 30px;
-  animation: fadein forwards 6s;
+  animation: fadein 6s forwards;
 }
 
-.header-texts{
-
+.header-texts {
   display: block;
   position: absolute;
   width: 100%;
   height: auto;
-  
 }
 
 .name h1 {
-
   position: absolute;
   max-width: 100%;
   text-align: left;
@@ -258,22 +203,18 @@ h6:hover {
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   animation-name: tracking-in;
-
   -webkit-animation: tracking-in 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
   animation: tracking-in 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
-
 }
 
- @-webkit-keyframes tracking-in {
+@-webkit-keyframes tracking-in {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(400px);
             transform: translateZ(400px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
+  40% { opacity: 0.6; }
   100% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -287,9 +228,7 @@ h6:hover {
             transform: translateZ(400px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
+  40% { opacity: 0.6; }
   100% {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -297,9 +236,7 @@ h6:hover {
   }
 }
 
-
 .header .pagetype h2 {
-
   position: absolute;
   text-align: left;
   padding-left: 2%;
@@ -307,12 +244,11 @@ h6:hover {
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   animation-name: slide-in-blurred-left;
- 
   -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 3s both;
 	animation: slide-in-blurred-left 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) 3s both;
 }
 
- @-webkit-keyframes slide-in-blurred-left {
+@-webkit-keyframes slide-in-blurred-left {
   0% {
     -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
             transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
@@ -354,215 +290,86 @@ h6:hover {
 }
 
 .description h3 {
- 
   width: 100%;
   padding-top: 50%;
   text-align: center;
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   animation-name: flicker;
-
   -webkit-animation: flicker 2s linear both;
 	animation: flicker 3s linear both;
   animation-delay: 3s;
-
 }
 
 @-webkit-keyframes flicker {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  10.1% {
-    opacity: 1;
-  }
-  10.2% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  20.1% {
-    opacity: 1;
-  }
-  20.6% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  30.1% {
-    opacity: 1;
-  }
-  30.5% {
-    opacity: 1;
-  }
-  30.6% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  45.1% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 1;
-  }
-  55.1% {
-    opacity: 0;
-  }
-  57% {
-    opacity: 0;
-  }
-  57.1% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  60.1% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  65.1% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  75.1% {
-    opacity: 0;
-  }
-  77% {
-    opacity: 0;
-  }
-  77.1% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  85.1% {
-    opacity: 0;
-  }
-  86% {
-    opacity: 0;
-  }
-  86.1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  10.1% { opacity: 1; }
+  10.2% { opacity: 0; }
+  20% { opacity: 0; }
+  20.1% { opacity: 1; }
+  20.6% { opacity: 0; }
+  30% { opacity: 0; }
+  30.1% { opacity: 1; }
+  30.5% { opacity: 1; }
+  30.6% { opacity: 0; }
+  45% { opacity: 0; }
+  45.1% { opacity: 1; }
+  50% { opacity: 1; }
+  55% { opacity: 1; }
+  55.1% { opacity: 0; }
+  57% { opacity: 0; }
+  57.1% { opacity: 1; }
+  60% { opacity: 1; }
+  60.1% { opacity: 0; }
+  65% { opacity: 0; }
+  65.1% { opacity: 1; }
+  75% { opacity: 1; }
+  75.1% { opacity: 0; }
+  77% { opacity: 0; }
+  77.1% { opacity: 1; }
+  85% { opacity: 1; }
+  85.1% { opacity: 0; }
+  86% { opacity: 0; }
+  86.1% { opacity: 1; }
+  100% { opacity: 1; }
 }
-@keyframes flicker{
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  10.1% {
-    opacity: 1;
-  }
-  10.2% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  20.1% {
-    opacity: 1;
-  }
-  20.6% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  30.1% {
-    opacity: 1;
-  }
-  30.5% {
-    opacity: 1;
-  }
-  30.6% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  45.1% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 1;
-  }
-  55.1% {
-    opacity: 0;
-  }
-  57% {
-    opacity: 0;
-  }
-  57.1% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  60.1% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  65.1% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  75.1% {
-    opacity: 0;
-  }
-  77% {
-    opacity: 0;
-  }
-  77.1% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  85.1% {
-    opacity: 0;
-  }
-  86% {
-    opacity: 0;
-  }
-  86.1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+@keyframes flicker {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  10.1% { opacity: 1; }
+  10.2% { opacity: 0; }
+  20% { opacity: 0; }
+  20.1% { opacity: 1; }
+  20.6% { opacity: 0; }
+  30% { opacity: 0; }
+  30.1% { opacity: 1; }
+  30.5% { opacity: 1; }
+  30.6% { opacity: 0; }
+  45% { opacity: 0; }
+  45.1% { opacity: 1; }
+  50% { opacity: 1; }
+  55% { opacity: 1; }
+  55.1% { opacity: 0; }
+  57% { opacity: 0; }
+  57.1% { opacity: 1; }
+  60% { opacity: 1; }
+  60.1% { opacity: 0; }
+  65% { opacity: 0; }
+  65.1% { opacity: 1; }
+  75% { opacity: 1; }
+  75.1% { opacity: 0; }
+  77% { opacity: 0; }
+  77.1% { opacity: 1; }
+  85% { opacity: 1; }
+  85.1% { opacity: 0; }
+  86% { opacity: 0; }
+  86.1% { opacity: 1; }
+  100% { opacity: 1; }
 }
 
 /* ############################ SOCIAL MEDIA LINKS ############################ */
-
 .header .socialmedialinks {
-
   display: inline-block;
   position: absolute;
   text-align: left;
@@ -570,68 +377,56 @@ h6:hover {
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
   z-index: 4;
-  
-
 }
 
 .fa-linkedin-in, .fa-linkedin, .fa-facebook-f, .fa-instagram, .fa-github {
-
   padding-left: 15px;
   padding-top: 8%;
   color: white;
-
 }
 
 /* ############################ VIDEOSCREEN ############################ */
-
 *#videoScreen {
-
-  filter:blur(5px);
+  filter: blur(5px);
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height:100vh;
+  height: 100vh;
   object-fit: fill;
-  z-index:-1;
+  z-index: -1;
 }
 
 /* ############################ NAVBAR ############################ */
-
-.navbar a{
-
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-text-transform: uppercase;
-color: #F2BB77;
-font-size: 2vw;
-padding-top: 5%;
-
+.navbar a {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  color: #F2BB77;
+  font-size: 2vw;
+  padding-top: 5%;
 }
 
 .nav * {
   box-sizing: border-box;
-  transition: all .35s ease;
-
+  transition: all 0.35s ease;
 }
 
 .nav {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
-  
 }
 
 .nav li {
   display: inline-block;
-  list-style: outside none none;
-  margin: .5em 1em;
+  list-style: none;
+  margin: 0.5em 1em;
   padding: 0;
-  
 }
 
 .nav a {
-  padding: .5em .8em;
-  color: rgba(255,255,255,.5);
+  padding: 0.5em 0.8em;
+  color: rgba(255, 255, 255, 0.5);
   position: relative;
   text-decoration: none;
   font-size: 2.5vw;
@@ -643,12 +438,11 @@ padding-top: 5%;
   height: 14px;
   width: 14px;
   position: absolute;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
   opacity: 0;
 }
 
 .nav a::before {
-  content: '';
   right: 0;
   top: 0;
   border-top: 3px solid #3E8914;
@@ -656,18 +450,17 @@ padding-top: 5%;
   transform: translate(-100%, 50%);
 }
 
-.nav a:after {
-  content: '';
+.nav a::after {
   left: 0;
   bottom: 0;
   border-bottom: 3px solid #2E640F;
   border-left: 3px solid #3E8914;
-  transform: translate(100%, -50%)
+  transform: translate(100%, -50%);
 }
 
-.nav a:hover:before,
-.nav a:hover:after{
-  transform: translate(0,0);
+.nav a:hover::before,
+.nav a:hover::after {
+  transform: translate(0, 0);
   opacity: 1;
 }
 
@@ -676,28 +469,24 @@ padding-top: 5%;
 }
 
 /* ############################ SECTIONS ############################ */
-
 .section {
-width: 100%;
-height: auto;
-display: flex;
-color: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: #ffffff;
 }
 
 .minusta-h1, .cv-h1, .osaaminen-h1, .kontakti-h1 {
   padding-top: 90px;
-  
 }
 
 /* ############################ LANGUAGES ICON CSS ############################ */
-
 .carousel-inner {
   height: 0;
-  padding-bottom: 120%; /* this sets carousel aspect ratio (4:1 here) */
+  padding-bottom: 120%; /* asettaa carouselin suhteen (4:1 tässä) */
 }
 
 .carousel-item {
-  
   top: 0;
   right: 0;
   bottom: 0;
@@ -705,12 +494,11 @@ color: #ffffff;
 }
 
 .carousel-item img {
-  height: 100%; /* Bootstrap handles width already */
-  object-fit: contain; /* or 'contain' if you want stretch instead of crop */
+  height: 100%; /* Bootstrap hoitaa leveyden */
+  object-fit: contain; /* tai 'contain' jos haluat venyttää sijaan kuin leikata */
 }
 
 /* ############################ Scroll up ############################ */
-
 #myBtn {
   display: block;
   width: 10%;
@@ -724,7 +512,6 @@ color: #ffffff;
   background-color: transparent;
   cursor: pointer;
   opacity: 0.60;
-
 }
 
 #myBtn:hover {
@@ -732,58 +519,123 @@ color: #ffffff;
 }
 
 /* ############################ Columns ############################ */
-
 .col-md-6 {
   width: 50%;
   height: auto;
-
 }
 
-.kontakti-container, .osaaminen-container, .cv-container, .minä-container{
-
+.kontakti-container, .osaaminen-container, .cv-container, .minä-container {
   width: 90%;
 }
 
 /* ############################ CUSTOMFORM ############################ */
-
-.customForm{
+.customForm {
   margin-top: 5%;
   width: 90%;
   max-width: 600px;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 200px;
+  /* Lisätty fadeIn animaatio lomakkeen ilmestymiseen */
+  animation: fadeIn 1.5s ease-out;
 }
 
 /* ############################ Breakpoints ############################ */
-
-
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (768px ja ylös) */
 @media only screen and (min-width: 768px) {
-
-body {
-  padding-left: 50px;
-  padding-right: 50px;
-  
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (992px ja ylös) */
 @media only screen and (min-width: 992px) {
-
-body {
-  padding-left: 70px;
-  padding-right: 70px;
-  
+  body {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (1200px ja ylös) */
 @media only screen and (min-width: 1200px) {
+  body {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
-body {
-  padding-left: 100px;
-  padding-right: 100px;
+/* ############################ Avainframes -animaatiot ############################ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.85; }
+}
+
+@keyframes tracking-in {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-blurred-left {
+  0% {
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform-origin: 100% 50%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0%, 10%, 20%, 30%, 45%, 55%, 65%, 75%, 85%, 100% { opacity: 1; }
+  10.1%, 10.2%, 20.1%, 20.6%, 30.1%, 30.6%, 45.1%, 55.1%, 57%, 57.1%, 60.1%, 65.1%, 75.1%, 77%, 77.1%, 85.1%, 86%, 86.1% { opacity: 0; }
+}
+
+/* Uusi animaatio: Pulse sosiaalisen median linkeille */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Lisätty sosiaalisen median linkkien hover-animaatio */
+.socialmedialinks a:hover {
+  animation: pulse 1s infinite;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Vähennetään kappaleiden, linkkien ja tekstien fonttikokoa */
+  p, .text-light, a {
+    font-size: 1.2vw;
+  }
   
+  /* Pienennetään otsikoiden fonttikokoja */
+  h1 {
+    font-size: 4vw;
+  }
+  
+  h3 {
+    font-size: 3vw;
+  }
+  
+  /* Voit tarvittaessa säätää myös muiden otsikoiden kokoa */
+  /* Esimerkiksi h2 ja h5: */
+  h2, h5 {
+    font-size: 3vw;  /* Tämä on esimerkki, säädä tarpeen mukaan */
   }
 }
