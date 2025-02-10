@@ -85,7 +85,7 @@ img:hover {
 
 /* ############################ Otsikot (h1-h6) ############################ */
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   font-family: "Staatliches", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -138,7 +138,7 @@ h6:hover {
   padding-right: 150px;
   font-family: "Staatliches", sans-serif;
   text-transform: uppercase;
-  margin-top: 25%;
+  margin-top: 10%;
   text-align: center;
   position: absolute;
   font-size: 4vw;
@@ -291,7 +291,7 @@ h6:hover {
 
 .description h3 {
   width: 100%;
-  padding-top: 50%;
+  padding-top: 25%;
   text-align: center;
   text-shadow: 2px 2px 8px #000000;
   font-size: 5vw;
